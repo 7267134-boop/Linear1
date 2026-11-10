@@ -362,47 +362,65 @@ body:not(.sidebar-collapsed) #sidebar-toggle-icon {
   z-index: 1 !important;
 }
 
-/* Soft Content Cards & Callout Boxes (Unit 6 Soft Rounded Standard in Golden-Champagne) */
+/* ==========================================================================
+   ENHANCED WARM PALETTE (RED / CRIMSON ANCHOR + SPARKLING GOLD & HARMONIC HUES)
+   Sidebar remains 100% untouched. Content cards, tabs, and sub-chapters elevated!
+   ========================================================================== */
+
 .content-wrapper {
-  background: rgba(255, 255, 255, 0.96) !important;
-  border-color: rgba(232, 200, 124, 0.85) !important;
-  box-shadow: 0 8px 28px -4px rgba(166, 109, 18, 0.08) !important;
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-color: rgba(225, 29, 72, 0.16) !important;
+  box-shadow: 0 12px 32px -6px rgba(159, 18, 57, 0.06), 0 4px 16px -2px rgba(217, 119, 6, 0.04) !important;
   border-radius: 1.6rem !important;
 }
+
+/* Sub-Chapter Welcome / Launchpad Box (Warm Rose & Gold Gradient) */
 .welcome-box {
-  border-right: 5px solid #a66d12 !important;
-  background: linear-gradient(to left, rgba(251, 244, 223, 0.9), rgba(255, 255, 255, 0.98)) !important;
-  box-shadow: 0 6px 20px -4px rgba(166, 109, 18, 0.10) !important;
-  border-top: 1px solid rgba(232, 200, 124, 0.85) !important;
-  border-bottom: 1px solid rgba(232, 200, 124, 0.85) !important;
-  border-left: 1px solid rgba(232, 200, 124, 0.85) !important;
+  border-right: 5px solid #be123c !important;
+  background: linear-gradient(135deg, rgba(255, 241, 242, 0.92) 0%, rgba(255, 255, 255, 0.98) 55%, rgba(254, 243, 199, 0.55) 100%) !important;
+  box-shadow: 0 6px 20px -4px rgba(190, 18, 60, 0.10) !important;
+  border-top: 1px solid rgba(251, 113, 133, 0.35) !important;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.25) !important;
+  border-left: 1px solid rgba(251, 113, 133, 0.25) !important;
   border-radius: 1.35rem !important;
 }
+.welcome-box h3 {
+  color: #881337 !important;
+}
+
+/* Intuition & Conceptual Flow (Sunlit Honey & Radiant Amber) */
 .concept-box, .intuition-flow-box {
   padding: 1.15rem 1.35rem;
   border-radius: 1.15rem;
-  border-right: 4.5px solid #b47814;
-  background: linear-gradient(to left, rgba(253, 251, 244, 0.95), rgba(255, 255, 255, 0.99));
-  box-shadow: 0 4px 16px -2px rgba(166, 109, 18, 0.08);
-  border-top: 1px solid rgba(232, 200, 124, 0.78);
-  border-bottom: 1px solid rgba(232, 200, 124, 0.78);
-  border-left: 1px solid rgba(232, 200, 124, 0.78);
+  border-right: 4.5px solid #f59e0b !important;
+  background: linear-gradient(to left, rgba(254, 243, 199, 0.65), rgba(255, 255, 255, 0.98)) !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 158, 11, 0.10) !important;
+  border-top: 1px solid rgba(251, 191, 36, 0.45) !important;
+  border-bottom: 1px solid rgba(251, 191, 36, 0.45) !important;
+  border-left: 1px solid rgba(251, 191, 36, 0.45) !important;
   margin: 1rem 0;
+  color: #451a03 !important;
 }
+.concept-box strong, .intuition-flow-box strong {
+  color: #92400e !important;
+}
+
+/* Course Connections & Reminders (Warm Terracotta / Coral) */
 .course-reminder-box {
-  background: linear-gradient(135deg, #fdfbf4 0%, #ffffff 55%, #fbf4df 100%);
-  border: 1px solid #e8c87c;
-  border-right: 4px solid #c28720;
+  background: linear-gradient(135deg, #fff7ed 0%, #ffffff 55%, #ffedd5 100%) !important;
+  border: 1px solid #fed7aa !important;
+  border-right: 4.5px solid #ea580c !important;
   border-radius: 1.1rem;
   padding: 0.9rem 1.2rem;
   margin: 0.75rem 0;
   font-size: 0.85rem;
-  color: #291805;
+  color: #431407 !important;
   line-height: 1.72;
+  box-shadow: 0 4px 14px -3px rgba(234, 88, 12, 0.10) !important;
 }
 .course-reminder-hdr {
   font-weight: 900;
-  color: #4d2e08;
+  color: #9a3412 !important;
   font-size: 0.81rem;
   display: flex;
   align-items: center;
@@ -410,99 +428,148 @@ body:not(.sidebar-collapsed) #sidebar-toggle-icon {
   margin-bottom: 0.25rem;
 }
 
+/* Definitions (Bold Crimson / Ruby with Rose-Tinted Ivory Backdrop) */
 .verbatim-card, .verbatim-def-box {
-  border-right: 6px solid #a66d12;
-  background: linear-gradient(135deg, #ffffff 0%, #fdfbf4 65%, #fbf4df 100%);
-  border-top: 1.5px solid #e8c87c;
-  border-bottom: 1.5px solid #e8c87c;
-  border-left: 1.5px solid #e8c87c;
-  box-shadow: 0 10px 25px -5px rgba(166, 109, 18, 0.13);
+  border-right: 6px solid #be123c !important;
+  background: linear-gradient(135deg, #ffffff 0%, #fffbfc 60%, #fff1f2 100%) !important;
+  border-top: 1.5px solid #fecdd3 !important;
+  border-bottom: 1.5px solid #fecdd3 !important;
+  border-left: 1.5px solid #fecdd3 !important;
+  box-shadow: 0 10px 26px -5px rgba(190, 18, 60, 0.12) !important;
   border-radius: 1.5rem;
   padding: 1.5rem 1.65rem;
   margin-bottom: 2rem;
   position: relative;
 }
+.verbatim-def-box .inline-flex, .verbatim-card .inline-flex {
+  background: linear-gradient(135deg, #9f1239, #be123c) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(159, 18, 57, 0.25) !important;
+}
+.verbatim-def-box h3, .verbatim-card h3 {
+  color: #4c0519 !important;
+}
+.verbatim-def-box blockquote, .verbatim-card blockquote {
+  border-color: #fecdd3 !important;
+  background: #ffffff !important;
+}
+
+/* Theorems, Corollaries & Lemmata (Radiant Royal Gold & Champagne Amber) */
 .verbatim-thm-box {
-  border-right: 6px solid #87550d;
-  background: linear-gradient(135deg, #ffffff 0%, #fefcf6 60%, #faeed4 100%);
-  border-top: 1.5px solid #d8a748;
-  border-bottom: 1.5px solid #d8a748;
-  border-left: 1.5px solid #d8a748;
-  box-shadow: 0 10px 25px -5px rgba(135, 85, 13, 0.14);
+  border-right: 6px solid #d97706 !important;
+  background: linear-gradient(135deg, #ffffff 0%, #fffdf8 60%, #fef3c7 100%) !important;
+  border-top: 1.5px solid #fde68a !important;
+  border-bottom: 1.5px solid #fde68a !important;
+  border-left: 1.5px solid #fde68a !important;
+  box-shadow: 0 10px 26px -5px rgba(217, 119, 6, 0.14) !important;
   border-radius: 1.5rem;
   padding: 1.5rem 1.65rem;
   margin-bottom: 2rem;
   position: relative;
 }
+.verbatim-thm-box .inline-flex {
+  background: linear-gradient(135deg, #b45309, #d97706) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(180, 83, 9, 0.25) !important;
+}
+.verbatim-thm-box h3 {
+  color: #451a03 !important;
+}
+.verbatim-thm-box blockquote {
+  border-color: #fde68a !important;
+  background: #ffffff !important;
+}
+
+/* Formal Proof Frames (Royal Sapphire / Indigo Rigor with Delicate Lavender Glow) */
 .math-proof-frame {
-  border-right: 6px solid #9a5f10;
-  background: linear-gradient(135deg, #ffffff 0%, #fdfbf4 60%, #fbf4df 100%);
-  border-top: 1.5px solid #e4be6e;
-  border-bottom: 1.5px solid #e4be6e;
-  border-left: 1.5px solid #e4be6e;
+  border-right: 6px solid #4338ca !important;
+  background: linear-gradient(135deg, #ffffff 0%, #faf8ff 60%, #eef2ff 100%) !important;
+  border-top: 1.5px solid #c7d2fe !important;
+  border-bottom: 1.5px solid #c7d2fe !important;
+  border-left: 1.5px solid #c7d2fe !important;
   border-radius: 1.5rem;
   padding: 1.5rem 1.75rem;
-  box-shadow: 0 10px 28px -6px rgba(154, 95, 16, 0.13);
+  box-shadow: 0 10px 28px -6px rgba(67, 56, 202, 0.13) !important;
   margin-bottom: 2.25rem;
   position: relative;
 }
-.exercise-frame, .ex-question-card {
-  border-right: 6px solid #a66d12 !important;
-  background: linear-gradient(135deg, #ffffff 0%, #fdfcf7 55%, #fbf4df 100%) !important;
-  border-top: 1.5px solid #e8c87c !important;
-  border-bottom: 1.5px solid #e8c87c !important;
-  border-left: 1.5px solid #e8c87c !important;
-  border-radius: 1.5rem !important;
-  box-shadow: 0 10px 28px -6px rgba(166, 109, 18, 0.13) !important;
-  overflow: hidden;
+.math-proof-frame .inline-flex {
+  background: linear-gradient(135deg, #312e81, #4338ca) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(49, 46, 129, 0.25) !important;
 }
+.math-proof-frame h3 {
+  color: #1e1b4b !important;
+}
+
+/* Proof Step Cards */
 .proof-step-card {
-  border-right: 4px solid #a66d12;
-  background: #ffffff;
-  border-top: 1px solid #f4e2b2;
-  border-bottom: 1px solid #f4e2b2;
-  border-left: 1px solid #f4e2b2;
+  border-right: 4px solid #4f46e5 !important;
+  background: #ffffff !important;
+  border-top: 1px solid #e0e7ff !important;
+  border-bottom: 1px solid #e0e7ff !important;
+  border-left: 1px solid #e0e7ff !important;
   border-radius: 1.05rem;
   padding: 1.15rem 1.25rem;
   transition: all 0.2s ease;
 }
 .proof-step-card:hover {
-  border-color: #d8a748;
-  box-shadow: 0 4px 14px rgba(166, 109, 18, 0.12);
+  border-color: #818cf8 !important;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.12) !important;
 }
 
-/* Circular Simulation Launcher Button (~3.65rem diameter, Soft Glowing Golden Orb — Unit 6 Standard) */
-@keyframes pulse-silver-ring {
+/* Exercises, Solved Examples & Questions (Fresh Emerald Jade & Mint) */
+.exercise-frame, .ex-question-card {
+  border-right: 6px solid #059669 !important;
+  background: linear-gradient(135deg, #ffffff 0%, #f7fdfa 55%, #ecfdf5 100%) !important;
+  border-top: 1.5px solid #a7f3d0 !important;
+  border-bottom: 1.5px solid #a7f3d0 !important;
+  border-left: 1.5px solid #a7f3d0 !important;
+  border-radius: 1.5rem !important;
+  box-shadow: 0 10px 28px -6px rgba(5, 150, 105, 0.13) !important;
+  overflow: hidden;
+}
+.exercise-frame .inline-flex, .ex-question-card .inline-flex {
+  background: linear-gradient(135deg, #065f46, #059669) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(6, 95, 70, 0.25) !important;
+}
+.exercise-frame h3, .ex-question-card h3 {
+  color: #064e3b !important;
+}
+
+/* Circular Simulation Launcher Button (Pulsating Radiant Ruby & Gold Orb) */
+@keyframes pulse-ruby-ring {
   0% {
-    box-shadow: 0 0 0 0 rgba(194, 135, 32, 0.50), 0 4px 14px rgba(166, 109, 18, 0.30);
+    box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.50), 0 4px 14px rgba(190, 18, 60, 0.35);
   }
   70% {
-    box-shadow: 0 0 0 11px rgba(194, 135, 32, 0), 0 6px 18px rgba(166, 109, 18, 0.40);
+    box-shadow: 0 0 0 11px rgba(225, 29, 72, 0), 0 6px 18px rgba(190, 18, 60, 0.45);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(194, 135, 32, 0), 0 4px 14px rgba(166, 109, 18, 0.30);
+    box-shadow: 0 0 0 0 rgba(225, 29, 72, 0), 0 4px 14px rgba(190, 18, 60, 0.35);
   }
 }
 .sim-circle-btn, .sim-launcher-circle {
   width: 3.65rem;
   height: 3.65rem;
   border-radius: 9999px;
-  background: radial-gradient(circle at 30% 30%, #ffffff 0%, #fbf4df 30%, #e8c87c 65%, #b47814 90%, #87550d 100%);
-  border: 2.5px solid #a66d12;
+  background: radial-gradient(circle at 30% 30%, #ffffff 0%, #ffe4e6 28%, #f43f5e 65%, #be123c 88%, #881337 100%) !important;
+  border: 2.5px solid #e11d48 !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  animation: pulse-silver-ring 2.6s infinite;
+  animation: pulse-ruby-ring 2.6s infinite !important;
   transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease, border-color 0.2s ease;
   position: relative;
   flex-shrink: 0;
 }
 .sim-circle-btn:hover, .sim-launcher-circle:hover {
   transform: scale(1.14) rotate(-5deg);
-  border-color: #69400b;
-  background: radial-gradient(circle at 30% 30%, #ffffff 0%, #fdfbf4 28%, #f4e2b2 60%, #c28720 85%, #87550d 100%);
-  box-shadow: 0 8px 24px rgba(166, 109, 18, 0.50), 0 0 0 4px rgba(244, 226, 178, 0.65);
+  border-color: #9f1239 !important;
+  background: radial-gradient(circle at 30% 30%, #ffffff 0%, #fff1f2 28%, #fb7185 60%, #e11d48 85%, #881337 100%) !important;
+  box-shadow: 0 8px 24px rgba(190, 18, 60, 0.50), 0 0 0 4px rgba(254, 205, 211, 0.65) !important;
 }
 .sim-circle-btn:active, .sim-launcher-circle:active {
   transform: scale(0.95);
@@ -512,7 +579,290 @@ body:not(.sidebar-collapsed) #sidebar-toggle-icon {
   content: none !important;
 }
 
-/* Questions Modal Options (Soft Brushed Gold Theme) */
+/* Sub-Chapter Bottom Navigation Footer */
+.subchapter-nav-footer {
+  background: linear-gradient(135deg, #fff1f2 0%, #ffffff 50%, #fef3c7 100%) !important;
+  border: 1.5px solid #fecdd3 !important;
+  box-shadow: 0 4px 16px rgba(190, 18, 60, 0.06) !important;
+}
+.subchapter-btn-next {
+  background: linear-gradient(135deg, #be123c, #9f1239) !important;
+  border-color: #fda4af !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(190, 18, 60, 0.28) !important;
+}
+.subchapter-btn-next:hover {
+  background: linear-gradient(135deg, #9f1239, #881337) !important;
+  box-shadow: 0 6px 18px rgba(190, 18, 60, 0.40) !important;
+}
+
+/* ==========================================================================
+   PER-TAB COLOR HARMONY (SUB-CHAPTER THEMATIC IDENTITIES)
+   ========================================================================== */
+
+/* Tab 1.1: Foundations & Set Operations — Rose & Crimson */
+#tab-p1-1 .formal-mode-view > div:first-child {
+  background: linear-gradient(to left, rgba(255, 228, 230, 0.95), rgba(255, 241, 242, 0.8), #ffffff) !important;
+  border: 1.5px solid #fecdd3 !important;
+  color: #881337 !important;
+  box-shadow: 0 4px 14px rgba(190, 18, 60, 0.06) !important;
+}
+#tab-p1-1 .formal-mode-view > div:first-child strong { color: #9f1239 !important; }
+#tab-p1-1 .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, rgba(255, 228, 230, 0.92) 0%, rgba(255, 255, 255, 0.98) 50%, rgba(254, 243, 199, 0.65) 100%) !important;
+  border: 2px solid #fb7185 !important;
+  box-shadow: 0 6px 20px -4px rgba(190, 18, 60, 0.12) !important;
+}
+#tab-p1-1 .formal-mode-view > div:nth-child(2) span.w-10 {
+  background: linear-gradient(135deg, #9f1239 0%, #be123c 60%, #e11d48 100%) !important;
+  box-shadow: 0 4px 12px rgba(159, 18, 57, 0.35) !important;
+}
+#tab-p1-1 .formal-mode-view > div:nth-child(2) h2 { color: #4c0519 !important; }
+
+/* Tab 1.2: Fields & Finite Fields — Royal Amber & Sunlit Gold */
+#tab-p1-2 .formal-mode-view > div:first-child {
+  background: linear-gradient(to left, rgba(254, 243, 199, 0.95), rgba(255, 251, 235, 0.8), #ffffff) !important;
+  border: 1.5px solid #fde68a !important;
+  color: #78350f !important;
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.06) !important;
+}
+#tab-p1-2 .formal-mode-view > div:first-child strong { color: #b45309 !important; }
+#tab-p1-2 .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.92) 0%, rgba(255, 255, 255, 0.98) 50%, rgba(255, 237, 213, 0.65) 100%) !important;
+  border: 2px solid #f59e0b !important;
+  box-shadow: 0 6px 20px -4px rgba(217, 119, 6, 0.12) !important;
+}
+#tab-p1-2 .formal-mode-view > div:nth-child(2) span.w-10 {
+  background: linear-gradient(135deg, #b45309 0%, #d97706 60%, #f59e0b 100%) !important;
+  box-shadow: 0 4px 12px rgba(180, 83, 9, 0.35) !important;
+}
+#tab-p1-2 .formal-mode-view > div:nth-child(2) h2 { color: #451a03 !important; }
+
+/* Tab 1.3: Fn Vectors & Linear Equations — Warm Coral & Terracotta */
+#tab-p1-3 .formal-mode-view > div:first-child {
+  background: linear-gradient(to left, rgba(255, 237, 213, 0.95), rgba(255, 247, 237, 0.8), #ffffff) !important;
+  border: 1.5px solid #fed7aa !important;
+  color: #7c2d12 !important;
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.06) !important;
+}
+#tab-p1-3 .formal-mode-view > div:first-child strong { color: #c2410c !important; }
+#tab-p1-3 .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, rgba(255, 237, 213, 0.92) 0%, rgba(255, 255, 255, 0.98) 50%, rgba(255, 228, 230, 0.65) 100%) !important;
+  border: 2px solid #fb923c !important;
+  box-shadow: 0 6px 20px -4px rgba(234, 88, 12, 0.12) !important;
+}
+#tab-p1-3 .formal-mode-view > div:nth-child(2) span.w-10 {
+  background: linear-gradient(135deg, #c2410c 0%, #ea580c 60%, #f97316 100%) !important;
+  box-shadow: 0 4px 12px rgba(194, 65, 12, 0.35) !important;
+}
+#tab-p1-3 .formal-mode-view > div:nth-child(2) h2 { color: #431407 !important; }
+
+/* Tab 1.4: Linear Systems & Matrices — Deep Ruby & Burgundy */
+#tab-p1-4 .formal-mode-view > div:first-child {
+  background: linear-gradient(to left, rgba(255, 228, 230, 0.95), rgba(255, 241, 242, 0.8), #ffffff) !important;
+  border: 1.5px solid #fda4af !important;
+  color: #4c0519 !important;
+  box-shadow: 0 4px 14px rgba(190, 18, 60, 0.06) !important;
+}
+#tab-p1-4 .formal-mode-view > div:first-child strong { color: #881337 !important; }
+#tab-p1-4 .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, rgba(255, 228, 230, 0.92) 0%, rgba(255, 255, 255, 0.98) 50%, rgba(243, 232, 255, 0.65) 100%) !important;
+  border: 2px solid #f43f5e !important;
+  box-shadow: 0 6px 20px -4px rgba(190, 18, 60, 0.12) !important;
+}
+#tab-p1-4 .formal-mode-view > div:nth-child(2) span.w-10 {
+  background: linear-gradient(135deg, #881337 0%, #9f1239 60%, #be123c 100%) !important;
+  box-shadow: 0 4px 12px rgba(136, 19, 55, 0.35) !important;
+}
+#tab-p1-4 .formal-mode-view > div:nth-child(2) h2 { color: #4c0519 !important; }
+
+/* Tab 1.5: Gaussian Elimination & Canonical Echelon — Radiant Golden Bronze */
+#tab-p1-5 .formal-mode-view > div:first-child {
+  background: linear-gradient(to left, rgba(254, 249, 195, 0.95), rgba(254, 252, 232, 0.8), #ffffff) !important;
+  border: 1.5px solid #fef08a !important;
+  color: #713f12 !important;
+  box-shadow: 0 4px 14px rgba(202, 138, 4, 0.06) !important;
+}
+#tab-p1-5 .formal-mode-view > div:first-child strong { color: #a16207 !important; }
+#tab-p1-5 .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, rgba(254, 249, 195, 0.92) 0%, rgba(255, 255, 255, 0.98) 50%, rgba(254, 243, 199, 0.65) 100%) !important;
+  border: 2px solid #eab308 !important;
+  box-shadow: 0 6px 20px -4px rgba(202, 138, 4, 0.12) !important;
+}
+#tab-p1-5 .formal-mode-view > div:nth-child(2) span.w-10 {
+  background: linear-gradient(135deg, #a16207 0%, #ca8a04 60%, #eab308 100%) !important;
+  box-shadow: 0 4px 12px rgba(161, 98, 7, 0.35) !important;
+}
+#tab-p1-5 .formal-mode-view > div:nth-child(2) h2 { color: #422006 !important; }
+
+/* Tab 1.6: Solution Counts & Square Systems — Imperial Garnet & Rose Quartz */
+#tab-p1-6 .formal-mode-view > div:first-child {
+  background: linear-gradient(to left, rgba(252, 231, 243, 0.95), rgba(253, 242, 248, 0.8), #ffffff) !important;
+  border: 1.5px solid #fbcfe8 !important;
+  color: #701a75 !important;
+  box-shadow: 0 4px 14px rgba(219, 39, 119, 0.06) !important;
+}
+#tab-p1-6 .formal-mode-view > div:first-child strong { color: #9d174d !important; }
+#tab-p1-6 .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, rgba(252, 231, 243, 0.92) 0%, rgba(255, 255, 255, 0.98) 50%, rgba(255, 228, 230, 0.65) 100%) !important;
+  border: 2px solid #f472b6 !important;
+  box-shadow: 0 6px 20px -4px rgba(219, 39, 119, 0.12) !important;
+}
+#tab-p1-6 .formal-mode-view > div:nth-child(2) span.w-10 {
+  background: linear-gradient(135deg, #9d174d 0%, #be185d 60%, #db2777 100%) !important;
+  box-shadow: 0 4px 12px rgba(157, 23, 77, 0.35) !important;
+}
+#tab-p1-6 .formal-mode-view > div:nth-child(2) h2 { color: #500724 !important; }
+
+/* Part 2 Tabs (2.1 to 2.6): Formal Proofs & Logic — Royal Sapphire-Indigo */
+#tab-p2-1 .formal-mode-view > div:first-child,
+#tab-p2-2 .formal-mode-view > div:first-child,
+#tab-p2-3 .formal-mode-view > div:first-child,
+#tab-p2-4 .formal-mode-view > div:first-child,
+#tab-p2-5 .formal-mode-view > div:first-child,
+#tab-p2-6 .formal-mode-view > div:first-child {
+  background: linear-gradient(to left, rgba(224, 231, 255, 0.95), rgba(238, 242, 255, 0.8), #ffffff) !important;
+  border: 1.5px solid #c7d2fe !important;
+  color: #1e1b4b !important;
+  box-shadow: 0 4px 14px rgba(67, 56, 202, 0.06) !important;
+}
+#tab-p2-1 .formal-mode-view > div:first-child strong,
+#tab-p2-2 .formal-mode-view > div:first-child strong,
+#tab-p2-3 .formal-mode-view > div:first-child strong,
+#tab-p2-4 .formal-mode-view > div:first-child strong,
+#tab-p2-5 .formal-mode-view > div:first-child strong,
+#tab-p2-6 .formal-mode-view > div:first-child strong { color: #312e81 !important; }
+#tab-p2-1 .formal-mode-view > div:nth-child(2),
+#tab-p2-2 .formal-mode-view > div:nth-child(2),
+#tab-p2-3 .formal-mode-view > div:nth-child(2),
+#tab-p2-4 .formal-mode-view > div:nth-child(2),
+#tab-p2-5 .formal-mode-view > div:nth-child(2),
+#tab-p2-6 .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, rgba(224, 231, 255, 0.92) 0%, rgba(255, 255, 255, 0.98) 50%, rgba(254, 243, 199, 0.65) 100%) !important;
+  border: 2px solid #818cf8 !important;
+  box-shadow: 0 6px 20px -4px rgba(67, 56, 202, 0.12) !important;
+}
+#tab-p2-1 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p2-2 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p2-3 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p2-4 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p2-5 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p2-6 .formal-mode-view > div:nth-child(2) span.w-10 {
+  background: linear-gradient(135deg, #312e81 0%, #4338ca 60%, #6366f1 100%) !important;
+  box-shadow: 0 4px 12px rgba(49, 46, 129, 0.35) !important;
+}
+#tab-p2-1 .formal-mode-view > div:nth-child(2) h2,
+#tab-p2-2 .formal-mode-view > div:nth-child(2) h2,
+#tab-p2-3 .formal-mode-view > div:nth-child(2) h2,
+#tab-p2-4 .formal-mode-view > div:nth-child(2) h2,
+#tab-p2-5 .formal-mode-view > div:nth-child(2) h2,
+#tab-p2-6 .formal-mode-view > div:nth-child(2) h2 { color: #1e1b4b !important; }
+
+/* Part 3 Tabs (3.1 to 3.7): Questions, Practice & Examples — Fresh Emerald Jade */
+#tab-p3-1 .formal-mode-view > div:first-child,
+#tab-p3-2 .formal-mode-view > div:first-child,
+#tab-p3-3 .formal-mode-view > div:first-child,
+#tab-p3-4 .formal-mode-view > div:first-child,
+#tab-p3-5 .formal-mode-view > div:first-child,
+#tab-p3-6 .formal-mode-view > div:first-child,
+#tab-p3-7 .formal-mode-view > div:first-child {
+  background: linear-gradient(to left, rgba(209, 250, 229, 0.95), rgba(236, 253, 245, 0.8), #ffffff) !important;
+  border: 1.5px solid #a7f3d0 !important;
+  color: #064e3b !important;
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.06) !important;
+}
+#tab-p3-1 .formal-mode-view > div:first-child strong,
+#tab-p3-2 .formal-mode-view > div:first-child strong,
+#tab-p3-3 .formal-mode-view > div:first-child strong,
+#tab-p3-4 .formal-mode-view > div:first-child strong,
+#tab-p3-5 .formal-mode-view > div:first-child strong,
+#tab-p3-6 .formal-mode-view > div:first-child strong,
+#tab-p3-7 .formal-mode-view > div:first-child strong { color: #047857 !important; }
+#tab-p3-1 .formal-mode-view > div:nth-child(2),
+#tab-p3-2 .formal-mode-view > div:nth-child(2),
+#tab-p3-3 .formal-mode-view > div:nth-child(2),
+#tab-p3-4 .formal-mode-view > div:nth-child(2),
+#tab-p3-5 .formal-mode-view > div:nth-child(2),
+#tab-p3-6 .formal-mode-view > div:nth-child(2),
+#tab-p3-7 .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, rgba(209, 250, 229, 0.92) 0%, rgba(255, 255, 255, 0.98) 50%, rgba(254, 243, 199, 0.65) 100%) !important;
+  border: 2px solid #34d399 !important;
+  box-shadow: 0 6px 20px -4px rgba(5, 150, 105, 0.12) !important;
+}
+#tab-p3-1 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p3-2 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p3-3 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p3-4 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p3-5 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p3-6 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p3-7 .formal-mode-view > div:nth-child(2) span.w-10 {
+  background: linear-gradient(135deg, #065f46 0%, #059669 60%, #10b981 100%) !important;
+  box-shadow: 0 4px 12px rgba(6, 95, 70, 0.35) !important;
+}
+#tab-p3-1 .formal-mode-view > div:nth-child(2) h2,
+#tab-p3-2 .formal-mode-view > div:nth-child(2) h2,
+#tab-p3-3 .formal-mode-view > div:nth-child(2) h2,
+#tab-p3-4 .formal-mode-view > div:nth-child(2) h2,
+#tab-p3-5 .formal-mode-view > div:nth-child(2) h2,
+#tab-p3-6 .formal-mode-view > div:nth-child(2) h2,
+#tab-p3-7 .formal-mode-view > div:nth-child(2) h2 { color: #064e3b !important; }
+
+/* Tab Lexicon: Grand Imperial Crimson & Golden Crest */
+#tab-lexicon .formal-mode-view > div:first-child {
+  background: linear-gradient(to left, rgba(255, 228, 230, 0.95), rgba(254, 243, 199, 0.8), #ffffff) !important;
+  border: 1.5px solid #fb7185 !important;
+  color: #881337 !important;
+  box-shadow: 0 4px 16px rgba(190, 18, 60, 0.08) !important;
+}
+#tab-lexicon .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, rgba(255, 228, 230, 0.92) 0%, rgba(255, 255, 255, 0.98) 50%, rgba(254, 243, 199, 0.75) 100%) !important;
+  border: 2px solid #be123c !important;
+  box-shadow: 0 6px 20px -4px rgba(190, 18, 60, 0.14) !important;
+}
+#tab-lexicon .formal-mode-view > div:nth-child(2) h2 { color: #4c0519 !important; }
+
+/* Sub-Chapter Quick Action Navigation Buttons in Header Card */
+.tab-content .formal-mode-view > div:nth-child(2) button:nth-child(1) {
+  border-color: #c7d2fe !important;
+  color: #312e81 !important;
+  background: #ffffff !important;
+}
+.tab-content .formal-mode-view > div:nth-child(2) button:nth-child(1):hover {
+  background: #eef2ff !important;
+  border-color: #818cf8 !important;
+}
+.tab-content .formal-mode-view > div:nth-child(2) button:nth-child(2) {
+  border-color: #a7f3d0 !important;
+  color: #065f46 !important;
+  background: #ffffff !important;
+}
+.tab-content .formal-mode-view > div:nth-child(2) button:nth-child(2):hover {
+  background: #ecfdf5 !important;
+  border-color: #34d399 !important;
+}
+.tab-content .formal-mode-view > div:nth-child(2) button:nth-child(3) {
+  background: linear-gradient(135deg, #be123c, #9f1239) !important;
+  border-color: #fda4af !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 14px rgba(190, 18, 60, 0.28) !important;
+}
+.tab-content .formal-mode-view > div:nth-child(2) button:nth-child(3):hover {
+  background: linear-gradient(135deg, #9f1239, #881337) !important;
+  box-shadow: 0 6px 18px rgba(190, 18, 60, 0.40) !important;
+}
+
+/* Questions Modal (Elevated Crimson & Gold Theme) */
+#questions-modal .bg-white {
+  border-color: rgba(225, 29, 72, 0.35) !important;
+  box-shadow: 0 20px 50px -10px rgba(190, 18, 60, 0.25) !important;
+}
+#questions-modal > div > div:first-child {
+  background: linear-gradient(to left, #fff1f2, #fffdf8, #ffffff) !important;
+  border-bottom: 1.5px solid #fecdd3 !important;
+}
+#questions-modal-title {
+  color: #4c0519 !important;
+}
 .q-option-btn {
   display: flex;
   align-items: center;
@@ -521,9 +871,9 @@ body:not(.sidebar-collapsed) #sidebar-toggle-icon {
   text-align: right;
   padding: 0.8rem 1.05rem;
   border-radius: 0.85rem;
-  border: 1.5px solid #e8c87c;
+  border: 1.5px solid #fecdd3 !important;
   background-color: #ffffff;
-  color: #2e1a05;
+  color: #3f1d24 !important;
   font-size: 0.88rem;
   font-weight: 600;
   line-height: 1.5;
@@ -531,10 +881,10 @@ body:not(.sidebar-collapsed) #sidebar-toggle-icon {
   cursor: pointer;
 }
 .q-option-btn:hover:not(:disabled) {
-  border-color: #a66d12;
-  background-color: #fdfbf4;
+  border-color: #e11d48 !important;
+  background-color: #fff1f2 !important;
   transform: translateX(-2px);
-  box-shadow: 0 2px 8px rgba(166, 109, 18, 0.14);
+  box-shadow: 0 2px 10px rgba(225, 29, 72, 0.12) !important;
 }
 .q-option-btn.correct {
   border-color: #059669 !important;
@@ -683,14 +1033,14 @@ body.study-mode-theorems {
 }
 
 /* ==========================================================================
-   EYE-LEVEL MODE ("בגובה העיניים") — SOFT BOOK STYLING (UNIT 6 GOLDEN)
+   EYE-LEVEL MODE ("בגובה העיניים") — WARM ROSE & GOLD BOOK STYLING
    ========================================================================== */
 .eye-chapter-banner {
-  background: linear-gradient(135deg, #fdfbf4 0%, #ffffff 52%, #f0fdfa 100%);
-  border: 1.5px solid #e8c87c;
+  background: linear-gradient(135deg, #fff1f2 0%, #ffffff 52%, #fef3c7 100%) !important;
+  border: 1.5px solid #fecdd3 !important;
   border-radius: 1.5rem;
   padding: 1.65rem 1.9rem;
-  box-shadow: 0 8px 24px -10px rgba(166, 109, 18, 0.12);
+  box-shadow: 0 8px 24px -10px rgba(190, 18, 60, 0.12) !important;
 }
 .eye-mode-pill {
   display: inline-flex;
@@ -698,9 +1048,9 @@ body.study-mode-theorems {
   gap: 0.35rem;
   padding: 0.28rem 0.85rem;
   border-radius: 9999px;
-  background: #fbf4df;
-  color: #69400b;
-  border: 1px solid #e8c87c;
+  background: linear-gradient(135deg, #ffe4e6, #fff1f2) !important;
+  color: #9f1239 !important;
+  border: 1px solid #fda4af !important;
   font-size: 0.76rem;
   font-weight: 800;
 }
@@ -708,14 +1058,14 @@ body.study-mode-theorems {
   font-size: 1.55rem;
   line-height: 1.35;
   font-weight: 900;
-  color: #2e1a05;
+  color: #4c0519 !important;
   margin-top: 0.45rem;
   margin-bottom: 0.65rem;
 }
 .eye-lead-p {
   font-size: 1.0rem;
   line-height: 1.86;
-  color: #332411;
+  color: #291805;
 }
 .eye-narrative-bridge {
   display: flex;
@@ -723,35 +1073,35 @@ body.study-mode-theorems {
   gap: 0.55rem;
   padding: 0.6rem 1.05rem;
   border-radius: 0.9rem;
-  background: linear-gradient(to left, rgba(251, 244, 223, 0.88), rgba(253, 251, 244, 0.65));
-  border: 1px solid #e8c87c;
-  border-right: 4px solid #a66d12;
+  background: linear-gradient(to left, rgba(255, 228, 230, 0.88), rgba(254, 243, 199, 0.65)) !important;
+  border: 1px solid #fecdd3 !important;
+  border-right: 4px solid #be123c !important;
   font-size: 0.86rem;
   font-weight: 700;
-  color: #4d2e08;
+  color: #881337 !important;
 }
 .eye-bridge-dot {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 9999px;
-  background: #a66d12;
+  background: #be123c !important;
   flex-shrink: 0;
 }
 .eye-story-card {
-  background: linear-gradient(145deg, #ffffff 0%, #fdfbf4 65%, #fbf4df 100%);
-  border: 1.5px solid #e8c87c;
-  border-right: 5px solid #a66d12;
+  background: linear-gradient(145deg, #ffffff 0%, #fffbfa 65%, #fff1f2 100%) !important;
+  border: 1.5px solid #fecdd3 !important;
+  border-right: 5px solid #be123c !important;
   border-radius: 1.35rem;
   padding: 1.6rem 1.8rem;
-  box-shadow: 0 6px 20px -8px rgba(166, 109, 18, 0.09);
+  box-shadow: 0 6px 20px -8px rgba(190, 18, 60, 0.10) !important;
 }
 .eye-section-title {
   font-size: 1.22rem;
   font-weight: 900;
-  color: #2e1a05;
+  color: #4c0519 !important;
   margin-bottom: 0.8rem;
   padding-bottom: 0.55rem;
-  border-bottom: 1px solid #f4e2b2;
+  border-bottom: 1px solid #fecdd3 !important;
 }
 .eye-prose {
   font-size: 0.98rem;
@@ -759,30 +1109,30 @@ body.study-mode-theorems {
   color: #291805;
 }
 .eye-concept-highlight {
-  background: linear-gradient(to left, #fbf4df, #ffffff);
-  border: 1.5px solid #e8c87c;
-  border-right: 4px solid #87550d;
+  background: linear-gradient(to left, #fef3c7, #ffffff) !important;
+  border: 1.5px solid #fde68a !important;
+  border-right: 4px solid #d97706 !important;
   border-radius: 1rem;
   padding: 1rem 1.25rem;
 }
 .eye-deep-notes {
-  background: linear-gradient(to left, #fdfbf4, #ffffff);
-  border: 1.5px solid #f4e2b2;
-  border-right: 4px solid #c28720;
+  background: linear-gradient(to left, #fff1f2, #ffffff) !important;
+  border: 1.5px solid #fecdd3 !important;
+  border-right: 4px solid #be123c !important;
   border-radius: 1rem;
   padding: 1rem 1.25rem;
 }
 .eye-graphic-box {
-  background: linear-gradient(135deg, #fdfbf4 0%, #ffffff 55%, #fbf4df 100%);
-  border: 1.5px solid #e8c87c;
+  background: linear-gradient(135deg, #fffbfa 0%, #ffffff 55%, #fef3c7 100%) !important;
+  border: 1.5px solid #fecdd3 !important;
   border-radius: 1.25rem;
   overflow: hidden;
-  box-shadow: 0 6px 20px -8px rgba(166, 109, 18, 0.10);
+  box-shadow: 0 6px 20px -8px rgba(190, 18, 60, 0.10) !important;
 }
 .eye-graphic-header {
-  background: linear-gradient(to left, #fbf4df, #fdfbf4, #ffffff);
+  background: linear-gradient(to left, #ffe4e6, #fffdf8, #ffffff) !important;
   padding: 0.62rem 1.05rem;
-  border-bottom: 1px solid #e8c87c;
+  border-bottom: 1px solid #fecdd3 !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -794,23 +1144,23 @@ body.study-mode-theorems {
   font-weight: 800;
   padding: 0.2rem 0.65rem;
   border-radius: 9999px;
-  background: #a66d12;
+  background: linear-gradient(135deg, #9f1239, #be123c) !important;
   color: #ffffff;
 }
 .eye-graphic-title {
   font-size: 0.83rem;
   font-weight: 800;
-  color: #3d2305;
+  color: #4c0519 !important;
   flex: 1;
 }
 .eye-graphic-tag {
   font-size: 0.72rem;
   font-weight: 800;
-  color: #69400b;
+  color: #9f1239 !important;
   background: #ffffff;
   padding: 0.16rem 0.6rem;
   border-radius: 0.5rem;
-  border: 1px solid #d8a748;
+  border: 1px solid #fecdd3 !important;
 }
 .eye-svg-wrapper {
   padding: 0.75rem 0.9rem;
@@ -821,15 +1171,15 @@ body.study-mode-theorems {
 }
 
 /* ==========================================================================
-   PURE THEOREMS MODE ("משפטים נטו") — SOFT GOLDEN BOUNDED BUBBLES
+   PURE THEOREMS MODE ("משפטים נטו") — RADIANT GOLDEN BOUNDED BUBBLES
    ========================================================================== */
 .theorems-header {
-  background: linear-gradient(135deg, #fbf4df 0%, #ffffff 55%, #fdfbf4 100%);
-  border: 1.5px solid #e8c87c;
-  border-right: 5px solid #a66d12;
+  background: linear-gradient(135deg, #fffbeb 0%, #ffffff 55%, #fef3c7 100%) !important;
+  border: 1.5px solid #fde68a !important;
+  border-right: 5px solid #d97706 !important;
   border-radius: 1.35rem;
   padding: 1.4rem 1.75rem;
-  box-shadow: 0 6px 20px -8px rgba(166, 109, 18, 0.10);
+  box-shadow: 0 6px 20px -8px rgba(217, 119, 6, 0.12) !important;
 }
 .theorems-connector {
   display: flex;
@@ -837,28 +1187,28 @@ body.study-mode-theorems {
   gap: 0.6rem;
   padding: 0.58rem 1.05rem;
   border-radius: 0.8rem;
-  background: linear-gradient(to left, #fbf4df, #fdfbf4);
-  border: 1px solid #f4e2b2;
-  border-right: 3.5px solid #b47814;
+  background: linear-gradient(to left, #fef3c7, #fffdf8) !important;
+  border: 1px solid #fde68a !important;
+  border-right: 3.5px solid #d97706 !important;
   font-size: 0.85rem;
   font-weight: 700;
-  color: #4d2e08;
+  color: #78350f !important;
 }
 .theorems-connector-dot {
   width: 0.55rem;
   height: 0.55rem;
   border-radius: 9999px;
-  background: #a66d12;
+  background: #d97706 !important;
   flex-shrink: 0;
-  box-shadow: 0 0 0 3px rgba(194, 135, 32, 0.22);
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.25) !important;
 }
 .theorems-item-card, .thm-neto-card {
   background: #ffffff;
-  border: 1.5px solid #e8c87c;
-  border-right: 5px solid #a66d12;
+  border: 1.5px solid #fde68a !important;
+  border-right: 5px solid #d97706 !important;
   border-radius: 1.25rem;
   padding: 1.3rem 1.55rem;
-  box-shadow: 0 6px 18px -6px rgba(166, 109, 18, 0.07);
+  box-shadow: 0 6px 18px -6px rgba(217, 119, 6, 0.08) !important;
 }
 .theorems-item-header {
   display: flex;
