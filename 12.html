@@ -360,47 +360,65 @@ body:not(.sidebar-collapsed) #sidebar-toggle-icon {
   z-index: 1 !important;
 }
 
-/* Soft Content Cards & Callout Boxes (Unit 6 Soft Rounded Standard in Golden-Champagne) */
+/* ==========================================================================
+   ENHANCED WARM PALETTE (RED / CRIMSON ANCHOR + SPARKLING GOLD & HARMONIC HUES)
+   Sidebar remains 100% untouched. Content cards, tabs, and sub-chapters elevated!
+   ========================================================================== */
+
 .content-wrapper {
-  background: rgba(255, 255, 255, 0.96) !important;
-  border-color: rgba(232, 200, 124, 0.85) !important;
-  box-shadow: 0 8px 28px -4px rgba(166, 109, 18, 0.08) !important;
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-color: rgba(225, 29, 72, 0.16) !important;
+  box-shadow: 0 12px 32px -6px rgba(159, 18, 57, 0.06), 0 4px 16px -2px rgba(217, 119, 6, 0.04) !important;
   border-radius: 1.6rem !important;
 }
+
+/* Sub-Chapter Welcome / Launchpad Box (Warm Rose & Gold Gradient) */
 .welcome-box {
-  border-right: 5px solid #a66d12 !important;
-  background: linear-gradient(to left, rgba(251, 244, 223, 0.9), rgba(255, 255, 255, 0.98)) !important;
-  box-shadow: 0 6px 20px -4px rgba(166, 109, 18, 0.10) !important;
-  border-top: 1px solid rgba(232, 200, 124, 0.85) !important;
-  border-bottom: 1px solid rgba(232, 200, 124, 0.85) !important;
-  border-left: 1px solid rgba(232, 200, 124, 0.85) !important;
+  border-right: 5px solid #be123c !important;
+  background: linear-gradient(135deg, rgba(255, 241, 242, 0.92) 0%, rgba(255, 255, 255, 0.98) 55%, rgba(254, 243, 199, 0.55) 100%) !important;
+  box-shadow: 0 6px 20px -4px rgba(190, 18, 60, 0.10) !important;
+  border-top: 1px solid rgba(251, 113, 133, 0.35) !important;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.25) !important;
+  border-left: 1px solid rgba(251, 113, 133, 0.25) !important;
   border-radius: 1.35rem !important;
 }
-.concept-box, .intuition-flow-box {
+.welcome-box h3 {
+  color: #881337 !important;
+}
+
+/* Intuition & Conceptual Flow (Sunlit Honey & Radiant Amber) */
+.concept-box, .intuition-flow-box, .intuition-box, .theorems-explanation-box, .theorems-brief-box, .eye-step-flow-box {
   padding: 1.15rem 1.35rem;
   border-radius: 1.15rem;
-  border-right: 4.5px solid #b47814;
-  background: linear-gradient(to left, rgba(253, 251, 244, 0.95), rgba(255, 255, 255, 0.99));
-  box-shadow: 0 4px 16px -2px rgba(166, 109, 18, 0.08);
-  border-top: 1px solid rgba(232, 200, 124, 0.78);
-  border-bottom: 1px solid rgba(232, 200, 124, 0.78);
-  border-left: 1px solid rgba(232, 200, 124, 0.78);
+  border-right: 4.5px solid #f59e0b !important;
+  background: linear-gradient(to left, rgba(254, 243, 199, 0.65), rgba(255, 255, 255, 0.98)) !important;
+  box-shadow: 0 4px 16px -2px rgba(245, 158, 11, 0.10) !important;
+  border-top: 1px solid rgba(251, 191, 36, 0.45) !important;
+  border-bottom: 1px solid rgba(251, 191, 36, 0.45) !important;
+  border-left: 1px solid rgba(251, 191, 36, 0.45) !important;
   margin: 1rem 0;
+  color: #451a03 !important;
 }
-.course-reminder-box {
-  background: linear-gradient(135deg, #fdfbf4 0%, #ffffff 55%, #fbf4df 100%);
-  border: 1px solid #e8c87c;
-  border-right: 4px solid #c28720;
+.concept-box strong, .intuition-flow-box strong, .intuition-box strong {
+  color: #92400e !important;
+}
+
+/* Course Connections, Reminders & Pitfalls (Warm Terracotta / Coral) */
+.course-reminder-box, .pit-box, .continuity-box, .continuity-bridge-box, .tips-box, .tips-warning-box, .prereq-reminder-box {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffffff 55%, #ffedd5 100%) !important;
+  border: 1px solid #fed7aa !important;
+  border-right: 4.5px solid #ea580c !important;
   border-radius: 1.1rem;
   padding: 0.9rem 1.2rem;
   margin: 0.75rem 0;
   font-size: 0.85rem;
-  color: #291805;
+  color: #431407 !important;
   line-height: 1.72;
+  box-shadow: 0 4px 14px -3px rgba(234, 88, 12, 0.10) !important;
 }
-.course-reminder-hdr {
+.course-reminder-hdr, .pit-hdr {
   font-weight: 900;
-  color: #4d2e08;
+  color: #9a3412 !important;
   font-size: 0.81rem;
   display: flex;
   align-items: center;
@@ -408,195 +426,549 @@ body:not(.sidebar-collapsed) #sidebar-toggle-icon {
   margin-bottom: 0.25rem;
 }
 
-.verbatim-card, .verbatim-def-box {
-  border-right: 6px solid #a66d12;
-  background: linear-gradient(135deg, #ffffff 0%, #fdfbf4 65%, #fbf4df 100%);
-  border-top: 1.5px solid #e8c87c;
-  border-bottom: 1.5px solid #e8c87c;
-  border-left: 1.5px solid #e8c87c;
-  box-shadow: 0 10px 25px -5px rgba(166, 109, 18, 0.13);
+/* Definitions (Bold Crimson / Ruby with Rose-Tinted Ivory Backdrop) */
+.verbatim-card, .verbatim-def-box, .concept-card, .formal-box, .verbatim-box {
+  border-right: 6px solid #be123c !important;
+  background: linear-gradient(135deg, #ffffff 0%, #fffbfc 60%, #fff1f2 100%) !important;
+  border-top: 1.5px solid #fecdd3 !important;
+  border-bottom: 1.5px solid #fecdd3 !important;
+  border-left: 1.5px solid #fecdd3 !important;
+  box-shadow: 0 10px 26px -5px rgba(190, 18, 60, 0.12) !important;
   border-radius: 1.5rem;
   padding: 1.5rem 1.65rem;
   margin-bottom: 2rem;
   position: relative;
 }
-.verbatim-thm-box {
-  border-right: 6px solid #87550d;
-  background: linear-gradient(135deg, #ffffff 0%, #fefcf6 60%, #faeed4 100%);
-  border-top: 1.5px solid #d8a748;
-  border-bottom: 1.5px solid #d8a748;
-  border-left: 1.5px solid #d8a748;
-  box-shadow: 0 10px 25px -5px rgba(135, 85, 13, 0.14);
+.verbatim-def-box .inline-flex, .verbatim-card .inline-flex, .formal-box .inline-flex {
+  background: linear-gradient(135deg, #9f1239, #be123c) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(159, 18, 57, 0.25) !important;
+}
+.verbatim-def-box h3, .verbatim-card h3, .formal-box h3 {
+  color: #4c0519 !important;
+}
+.verbatim-def-box blockquote, .verbatim-card blockquote, .formal-box blockquote {
+  border-color: #fecdd3 !important;
+  background: #ffffff !important;
+}
+
+/* Theorems, Corollaries & Lemmata (Radiant Royal Gold & Champagne Amber) */
+.verbatim-thm-box, .theorem-card {
+  border-right: 6px solid #d97706 !important;
+  background: linear-gradient(135deg, #ffffff 0%, #fffdf8 60%, #fef3c7 100%) !important;
+  border-top: 1.5px solid #fde68a !important;
+  border-bottom: 1.5px solid #fde68a !important;
+  border-left: 1.5px solid #fde68a !important;
+  box-shadow: 0 10px 26px -5px rgba(217, 119, 6, 0.14) !important;
   border-radius: 1.5rem;
   padding: 1.5rem 1.65rem;
   margin-bottom: 2rem;
   position: relative;
 }
-.math-proof-frame {
-  border-right: 6px solid #9a5f10;
-  background: linear-gradient(135deg, #ffffff 0%, #fdfbf4 60%, #fbf4df 100%);
-  border-top: 1.5px solid #e4be6e;
-  border-bottom: 1.5px solid #e4be6e;
-  border-left: 1.5px solid #e4be6e;
+.verbatim-thm-box .inline-flex, .theorem-card .inline-flex {
+  background: linear-gradient(135deg, #b45309, #d97706) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(180, 83, 9, 0.25) !important;
+}
+.verbatim-thm-box h3, .theorem-card h3 {
+  color: #451a03 !important;
+}
+.verbatim-thm-box blockquote, .theorem-card blockquote {
+  border-color: #fde68a !important;
+  background: #ffffff !important;
+}
+
+/* Formal Proof Frames (Royal Sapphire / Indigo Rigor with Delicate Lavender Glow) */
+.math-proof-frame, .p-claim-box, .p-tools-box, .sapphire-diagram-card {
+  border-right: 6px solid #4338ca !important;
+  background: linear-gradient(135deg, #ffffff 0%, #faf8ff 60%, #eef2ff 100%) !important;
+  border-top: 1.5px solid #c7d2fe !important;
+  border-bottom: 1.5px solid #c7d2fe !important;
+  border-left: 1.5px solid #c7d2fe !important;
   border-radius: 1.5rem;
   padding: 1.5rem 1.75rem;
-  box-shadow: 0 10px 28px -6px rgba(154, 95, 16, 0.13);
+  box-shadow: 0 10px 28px -6px rgba(67, 56, 202, 0.13) !important;
   margin-bottom: 2.25rem;
   position: relative;
 }
-.exercise-frame, .ex-question-card {
-  border-right: 6px solid #a66d12 !important;
-  background: linear-gradient(135deg, #ffffff 0%, #fdfcf7 55%, #fbf4df 100%) !important;
-  border-top: 1.5px solid #e8c87c !important;
-  border-bottom: 1.5px solid #e8c87c !important;
-  border-left: 1.5px solid #e8c87c !important;
-  border-radius: 1.5rem !important;
-  box-shadow: 0 10px 28px -6px rgba(166, 109, 18, 0.13) !important;
-  overflow: hidden;
+.math-proof-frame .inline-flex, .p-claim-box .inline-flex {
+  background: linear-gradient(135deg, #312e81, #4338ca) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(49, 46, 129, 0.25) !important;
 }
+.math-proof-frame h3, .p-claim-box h3 {
+  color: #1e1b4b !important;
+}
+
+/* Proof Step Cards */
 .proof-step-card {
-  border-right: 4px solid #a66d12;
-  background: #ffffff;
-  border-top: 1px solid #f4e2b2;
-  border-bottom: 1px solid #f4e2b2;
-  border-left: 1px solid #f4e2b2;
+  border-right: 4px solid #4f46e5 !important;
+  background: #ffffff !important;
+  border-top: 1px solid #e0e7ff !important;
+  border-bottom: 1px solid #e0e7ff !important;
+  border-left: 1px solid #e0e7ff !important;
   border-radius: 1.05rem;
   padding: 1.15rem 1.25rem;
   transition: all 0.2s ease;
 }
 .proof-step-card:hover {
-  border-color: #d8a748;
-  box-shadow: 0 4px 14px rgba(166, 109, 18, 0.12);
+  border-color: #818cf8 !important;
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.12) !important;
 }
 
-/* Circular Simulation Launcher Button (~3.65rem diameter, Soft Glowing Golden Orb — Unit 6 Standard) */
-@keyframes pulse-silver-ring {
-  0% {
-    box-shadow: 0 0 0 0 rgba(194, 135, 32, 0.50), 0 4px 14px rgba(166, 109, 18, 0.30);
-  }
-  70% {
-    box-shadow: 0 0 0 11px rgba(194, 135, 32, 0), 0 6px 18px rgba(166, 109, 18, 0.40);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(194, 135, 32, 0), 0 4px 14px rgba(166, 109, 18, 0.30);
-  }
+/* Exercises, Solved Examples & Questions (Fresh Emerald Jade & Mint) */
+.exercise-frame, .exercise-card, .ex-question-card, .ex-box, .q-box, .sol-step, .ex-hint-box, .ex-sol-box, .ex-stmt-box, .sol-details-box, .q-feedback-box, .q-item-box, .mcq-card, .open-q-card {
+  border-right: 6px solid #059669 !important;
+  background: linear-gradient(135deg, #ffffff 0%, #f7fdfa 55%, #ecfdf5 100%) !important;
+  border-top: 1.5px solid #a7f3d0 !important;
+  border-bottom: 1.5px solid #a7f3d0 !important;
+  border-left: 1.5px solid #a7f3d0 !important;
+  border-radius: 1.5rem;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 10px 28px -6px rgba(5, 150, 105, 0.13) !important;
+  overflow: hidden;
 }
-.sim-circle-btn, .sim-launcher-circle {
-  width: 3.65rem;
-  height: 3.65rem;
-  border-radius: 9999px;
-  background: radial-gradient(circle at 30% 30%, #ffffff 0%, #fbf4df 30%, #e8c87c 65%, #b47814 90%, #87550d 100%);
-  border: 2.5px solid #a66d12;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  animation: pulse-silver-ring 2.6s infinite;
-  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.25s ease, border-color 0.2s ease;
-  position: relative;
-  flex-shrink: 0;
+.exercise-frame .inline-flex, .ex-question-card .inline-flex, .q-box .inline-flex, .exercise-card .inline-flex {
+  background: linear-gradient(135deg, #065f46, #059669) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(5, 150, 105, 0.25) !important;
 }
-.sim-circle-btn:hover, .sim-launcher-circle:hover {
-  transform: scale(1.14) rotate(-5deg);
-  border-color: #69400b;
-  background: radial-gradient(circle at 30% 30%, #ffffff 0%, #fdfbf4 28%, #f4e2b2 60%, #c28720 85%, #87550d 100%);
-  box-shadow: 0 8px 24px rgba(166, 109, 18, 0.50), 0 0 0 4px rgba(244, 226, 178, 0.65);
-}
-.sim-circle-btn:active, .sim-launcher-circle:active {
-  transform: scale(0.95);
-}
-.sim-circle-btn::after {
-  display: none !important;
-  content: none !important;
+.exercise-frame h3, .ex-question-card h3, .exercise-card h3 {
+  color: #064e3b !important;
 }
 
-/* Questions Modal Options (Soft Brushed Gold Theme) */
-.q-option-btn {
+/* Semantic Badges, Tags & Step Buttons */
+.card-hdr {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(225, 29, 72, 0.15) !important;
+  padding-bottom: 0.9rem;
+  margin-bottom: 1rem;
+}
+.fbox-hdr {
+  font-size: 0.78rem;
+  font-weight: 900;
+  color: #9f1239 !important;
+  margin-bottom: 0.35rem;
   display: flex;
   align-items: center;
-  gap: 0.7rem;
-  width: 100%;
-  text-align: right;
-  padding: 0.8rem 1.05rem;
-  border-radius: 0.85rem;
-  border: 1.5px solid #e8c87c;
-  background-color: #ffffff;
-  color: #2e1a05;
-  font-size: 0.88rem;
-  font-weight: 600;
-  line-height: 1.5;
+  gap: 0.35rem;
+}
+.ibox-hdr {
+  font-size: 0.78rem;
+  font-weight: 900;
+  color: #b45309 !important;
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.ex-hdr {
+  font-weight: 900;
+  color: #065f46 !important;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.82rem;
+}
+.pit-hdr {
+  font-weight: 900;
+  color: #9a3412 !important;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.82rem;
+}
+.sol-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 0.65rem;
+  background: linear-gradient(135deg, #059669, #10b981) !important;
+  color: #ffffff !important;
+  font-size: 0.75rem;
+  font-weight: 800;
+  box-shadow: 0 2px 6px rgba(5, 150, 105, 0.25);
   transition: all 0.2s ease;
-  cursor: pointer;
+}
+.sol-btn:hover {
+  background: linear-gradient(135deg, #047857, #059669) !important;
+  transform: translateY(-1px);
+}
+.badge-p1 {
+  background: linear-gradient(135deg, #9f1239, #be123c) !important;
+  color: #ffffff !important;
+}
+.badge-p2 {
+  background: linear-gradient(135deg, #312e81, #4338ca) !important;
+  color: #ffffff !important;
+}
+.badge-p3 {
+  background: linear-gradient(135deg, #065f46, #059669) !important;
+  color: #ffffff !important;
+}
+.tag-p2 {
+  background: #e0e7ff !important;
+  color: #312e81 !important;
+  border: 1px solid #c7d2fe !important;
+}
+.tag-p3 {
+  background: #ecfdf5 !important;
+  color: #065f46 !important;
+  border: 1px solid #a7f3d0 !important;
+}
+
+/* Circular Simulation Launcher Button (Pulsating Radiant Ruby & Gold Orb) */
+.sim-circle-btn, .sim-launcher-circle {
+  width: 3.5rem !important;
+  height: 3.5rem !important;
+  border-radius: 9999px !important;
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: radial-gradient(circle at 35% 30%, #fef08a 0%, #f59e0b 28%, #e11d48 70%, #881337 100%) !important;
+  border: 2px solid #fda4af !important;
+  box-shadow: 0 0 0 3px rgba(225, 29, 72, 0.22), 0 8px 24px -2px rgba(190, 18, 60, 0.42) !important;
+  cursor: pointer !important;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  flex-shrink: 0 !important;
+  animation: pulse-ruby-ring 3.2s cubic-bezier(0.4, 0, 0.6, 1) infinite !important;
+}
+.sim-circle-btn:hover, .sim-launcher-circle:hover {
+  transform: scale(1.14) rotate(4deg) !important;
+  border-color: #9f1239 !important;
+  box-shadow: 0 0 0 5px rgba(225, 29, 72, 0.35), 0 14px 30px -2px rgba(159, 18, 57, 0.55) !important;
+}
+@keyframes pulse-ruby-ring {
+  0%, 100% {
+    box-shadow: 0 0 0 3px rgba(225, 29, 72, 0.22), 0 8px 24px -2px rgba(190, 18, 60, 0.42);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(225, 29, 72, 0.38), 0 10px 28px -2px rgba(245, 158, 11, 0.48);
+  }
+}
+
+/* Sub-Chapter Bottom Navigation Footer */
+.step-prev-btn, .step-next-btn, .subchapter-btn-prev, .subchapter-btn-next {
+  background: linear-gradient(135deg, #ffffff 0%, #fff1f2 100%) !important;
+  border-color: #fecdd3 !important;
+  color: #9f1239 !important;
+  box-shadow: 0 4px 14px -2px rgba(190, 18, 60, 0.08) !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.step-prev-btn:hover, .step-next-btn:hover, .subchapter-btn-prev:hover, .subchapter-btn-next:hover {
+  background: linear-gradient(135deg, #9f1239 0%, #be123c 100%) !important;
+  color: #ffffff !important;
+  border-color: #881337 !important;
+  box-shadow: 0 8px 22px -4px rgba(190, 18, 60, 0.35) !important;
+  transform: translateY(-2px) !important;
+}
+.step-indicator {
+  background: linear-gradient(135deg, #fffbeb, #fef3c7) !important;
+  border-color: #fde68a !important;
+  color: #78350f !important;
+}
+
+/* ==========================================================================
+   PER-TAB COLOR HARMONY (SUB-CHAPTER THEMATIC IDENTITIES - CHAPTER 12)
+   Majestic Ruby, Gold & Emerald
+   ========================================================================== */
+
+/* Tab 12.1: Majestic Ruby */
+#tab-p1-1 .formal-mode-view > div:first-child {
+  background: linear-gradient(135deg, rgba(255, 241, 242, 0.95), rgba(255, 255, 255, 0.98), rgba(254, 243, 199, 0.6)) !important;
+  border: 1.5px solid #fecdd3 !important;
+  border-right: 5px solid #be123c !important;
+  box-shadow: 0 6px 18px -4px rgba(190, 18, 60, 0.10) !important;
+}
+#tab-p1-1 .formal-mode-view > div:first-child strong { color: #9f1239 !important; }
+#tab-p1-1 .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, #ffffff, #fffbfc, #fff1f2) !important;
+  border: 1.5px solid #fecdd3 !important;
+  border-right: 5px solid #be123c !important;
+  box-shadow: 0 8px 24px -6px rgba(190, 18, 60, 0.12) !important;
+}
+#tab-p1-1 .formal-mode-view > div:nth-child(2) span.w-10 {
+  background: linear-gradient(135deg, #9f1239, #be123c) !important;
+  box-shadow: 0 2px 8px rgba(190, 18, 60, 0.28) !important;
+}
+#tab-p1-1 .formal-mode-view > div:nth-child(2) h2 { color: #4c0519 !important; }
+
+/* Tab 12.2: Radiant Gold */
+#tab-p1-2 .formal-mode-view > div:first-child {
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.75), rgba(255, 255, 255, 0.98), rgba(255, 251, 235, 0.9)) !important;
+  border: 1.5px solid #fde68a !important;
+  border-right: 5px solid #d97706 !important;
+  box-shadow: 0 6px 18px -4px rgba(190, 18, 60, 0.10) !important;
+}
+#tab-p1-2 .formal-mode-view > div:first-child strong { color: #b45309 !important; }
+#tab-p1-2 .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, #ffffff, #fffdf8, #fef3c7) !important;
+  border: 1.5px solid #fde68a !important;
+  border-right: 5px solid #d97706 !important;
+  box-shadow: 0 8px 24px -6px rgba(190, 18, 60, 0.12) !important;
+}
+#tab-p1-2 .formal-mode-view > div:nth-child(2) span.w-10 {
+  background: linear-gradient(135deg, #b45309, #d97706) !important;
+  box-shadow: 0 2px 8px rgba(190, 18, 60, 0.28) !important;
+}
+#tab-p1-2 .formal-mode-view > div:nth-child(2) h2 { color: #451a03 !important; }
+
+/* Tab 12.3: Emerald Jade */
+#tab-p1-3 .formal-mode-view > div:first-child {
+  background: linear-gradient(135deg, rgba(236, 253, 245, 0.85), rgba(255, 255, 255, 0.98), rgba(209, 250, 229, 0.6)) !important;
+  border: 1.5px solid #a7f3d0 !important;
+  border-right: 5px solid #059669 !important;
+  box-shadow: 0 6px 18px -4px rgba(190, 18, 60, 0.10) !important;
+}
+#tab-p1-3 .formal-mode-view > div:first-child strong { color: #047857 !important; }
+#tab-p1-3 .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, #ffffff, #f7fdfa, #ecfdf5) !important;
+  border: 1.5px solid #a7f3d0 !important;
+  border-right: 5px solid #059669 !important;
+  box-shadow: 0 8px 24px -6px rgba(190, 18, 60, 0.12) !important;
+}
+#tab-p1-3 .formal-mode-view > div:nth-child(2) span.w-10 {
+  background: linear-gradient(135deg, #065f46, #059669) !important;
+  box-shadow: 0 2px 8px rgba(190, 18, 60, 0.28) !important;
+}
+#tab-p1-3 .formal-mode-view > div:nth-child(2) h2 { color: #064e3b !important; }
+
+/* Tab 12.4: Royal Sapphire */
+#tab-p1-4 .formal-mode-view > div:first-child {
+  background: linear-gradient(135deg, rgba(238, 242, 255, 0.85), rgba(255, 255, 255, 0.98), rgba(224, 231, 255, 0.6)) !important;
+  border: 1.5px solid #c7d2fe !important;
+  border-right: 5px solid #4338ca !important;
+  box-shadow: 0 6px 18px -4px rgba(190, 18, 60, 0.10) !important;
+}
+#tab-p1-4 .formal-mode-view > div:first-child strong { color: #312e81 !important; }
+#tab-p1-4 .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, #ffffff, #faf8ff, #eef2ff) !important;
+  border: 1.5px solid #c7d2fe !important;
+  border-right: 5px solid #4338ca !important;
+  box-shadow: 0 8px 24px -6px rgba(190, 18, 60, 0.12) !important;
+}
+#tab-p1-4 .formal-mode-view > div:nth-child(2) span.w-10 {
+  background: linear-gradient(135deg, #312e81, #4338ca) !important;
+  box-shadow: 0 2px 8px rgba(190, 18, 60, 0.28) !important;
+}
+#tab-p1-4 .formal-mode-view > div:nth-child(2) h2 { color: #1e1b4b !important; }
+
+/* Tab 12.5: Imperial Garnet */
+#tab-p1-5 .formal-mode-view > div:first-child {
+  background: linear-gradient(135deg, rgba(253, 232, 240, 0.75), rgba(255, 255, 255, 0.98), rgba(255, 241, 242, 0.6)) !important;
+  border: 1.5px solid #fbcfe8 !important;
+  border-right: 5px solid #9d174d !important;
+  box-shadow: 0 6px 18px -4px rgba(190, 18, 60, 0.10) !important;
+}
+#tab-p1-5 .formal-mode-view > div:first-child strong { color: #831843 !important; }
+#tab-p1-5 .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, #ffffff, #fdf2f8, #fce7f3) !important;
+  border: 1.5px solid #fbcfe8 !important;
+  border-right: 5px solid #9d174d !important;
+  box-shadow: 0 8px 24px -6px rgba(190, 18, 60, 0.12) !important;
+}
+#tab-p1-5 .formal-mode-view > div:nth-child(2) span.w-10 {
+  background: linear-gradient(135deg, #831843, #9d174d) !important;
+  box-shadow: 0 2px 8px rgba(190, 18, 60, 0.28) !important;
+}
+#tab-p1-5 .formal-mode-view > div:nth-child(2) h2 { color: #500724 !important; }
+
+/* Part 2 Tabs: Formal Proofs & Logic — Royal Sapphire-Indigo */
+#tab-p2-1 .formal-mode-view > div:first-child,
+#tab-p2-2 .formal-mode-view > div:first-child,
+#tab-p2-3 .formal-mode-view > div:first-child,
+#tab-p2-4 .formal-mode-view > div:first-child,
+#tab-p2-5 .formal-mode-view > div:first-child {
+  background: linear-gradient(135deg, rgba(238, 242, 255, 0.95) 0%, rgba(255, 255, 255, 0.98) 60%, rgba(224, 231, 255, 0.6) 100%) !important;
+  border: 1.5px solid #c7d2fe !important;
+  border-right: 5px solid #4338ca !important;
+  box-shadow: 0 6px 18px -4px rgba(67, 56, 202, 0.10) !important;
+}
+#tab-p2-1 .formal-mode-view > div:first-child strong,
+#tab-p2-2 .formal-mode-view > div:first-child strong,
+#tab-p2-3 .formal-mode-view > div:first-child strong,
+#tab-p2-4 .formal-mode-view > div:first-child strong,
+#tab-p2-5 .formal-mode-view > div:first-child strong { color: #312e81 !important; }
+#tab-p2-1 .formal-mode-view > div:nth-child(2),
+#tab-p2-2 .formal-mode-view > div:nth-child(2),
+#tab-p2-3 .formal-mode-view > div:nth-child(2),
+#tab-p2-4 .formal-mode-view > div:nth-child(2),
+#tab-p2-5 .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, #ffffff 0%, #faf8ff 55%, #eef2ff 100%) !important;
+  border: 1.5px solid #c7d2fe !important;
+  border-right: 5px solid #4338ca !important;
+  box-shadow: 0 8px 24px -6px rgba(67, 56, 202, 0.12) !important;
+}
+#tab-p2-1 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p2-2 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p2-3 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p2-4 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p2-5 .formal-mode-view > div:nth-child(2) span.w-10 {
+  background: linear-gradient(135deg, #312e81, #4338ca) !important;
+  box-shadow: 0 2px 8px rgba(67, 56, 202, 0.28) !important;
+}
+#tab-p2-1 .formal-mode-view > div:nth-child(2) h2,
+#tab-p2-2 .formal-mode-view > div:nth-child(2) h2,
+#tab-p2-3 .formal-mode-view > div:nth-child(2) h2,
+#tab-p2-4 .formal-mode-view > div:nth-child(2) h2,
+#tab-p2-5 .formal-mode-view > div:nth-child(2) h2 { color: #1e1b4b !important; }
+
+/* Part 3 Tabs: Questions, Practice & Examples — Fresh Emerald Jade */
+#tab-p3-1 .formal-mode-view > div:first-child,
+#tab-p3-2 .formal-mode-view > div:first-child,
+#tab-p3-3 .formal-mode-view > div:first-child,
+#tab-p3-4 .formal-mode-view > div:first-child,
+#tab-p3-5 .formal-mode-view > div:first-child,
+#tab-p3-6 .formal-mode-view > div:first-child {
+  background: linear-gradient(135deg, rgba(236, 253, 245, 0.95) 0%, rgba(255, 255, 255, 0.98) 60%, rgba(209, 250, 229, 0.6) 100%) !important;
+  border: 1.5px solid #a7f3d0 !important;
+  border-right: 5px solid #059669 !important;
+  box-shadow: 0 6px 18px -4px rgba(5, 150, 105, 0.10) !important;
+}
+#tab-p3-1 .formal-mode-view > div:first-child strong,
+#tab-p3-2 .formal-mode-view > div:first-child strong,
+#tab-p3-3 .formal-mode-view > div:first-child strong,
+#tab-p3-4 .formal-mode-view > div:first-child strong,
+#tab-p3-5 .formal-mode-view > div:first-child strong,
+#tab-p3-6 .formal-mode-view > div:first-child strong { color: #047857 !important; }
+#tab-p3-1 .formal-mode-view > div:nth-child(2),
+#tab-p3-2 .formal-mode-view > div:nth-child(2),
+#tab-p3-3 .formal-mode-view > div:nth-child(2),
+#tab-p3-4 .formal-mode-view > div:nth-child(2),
+#tab-p3-5 .formal-mode-view > div:nth-child(2),
+#tab-p3-6 .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, #ffffff 0%, #f7fdfa 55%, #ecfdf5 100%) !important;
+  border: 1.5px solid #a7f3d0 !important;
+  border-right: 5px solid #059669 !important;
+  box-shadow: 0 8px 24px -6px rgba(5, 150, 105, 0.12) !important;
+}
+#tab-p3-1 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p3-2 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p3-3 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p3-4 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p3-5 .formal-mode-view > div:nth-child(2) span.w-10,
+#tab-p3-6 .formal-mode-view > div:nth-child(2) span.w-10 {
+  background: linear-gradient(135deg, #065f46, #059669) !important;
+  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.28) !important;
+}
+#tab-p3-1 .formal-mode-view > div:nth-child(2) h2,
+#tab-p3-2 .formal-mode-view > div:nth-child(2) h2,
+#tab-p3-3 .formal-mode-view > div:nth-child(2) h2,
+#tab-p3-4 .formal-mode-view > div:nth-child(2) h2,
+#tab-p3-5 .formal-mode-view > div:nth-child(2) h2,
+#tab-p3-6 .formal-mode-view > div:nth-child(2) h2 { color: #064e3b !important; }
+
+/* Tab Lexicon: Grand Imperial Crimson & Golden Crest */
+#tab-lexicon .formal-mode-view > div:first-child {
+  background: linear-gradient(135deg, rgba(255, 241, 242, 0.95) 0%, rgba(255, 255, 255, 0.98) 60%, rgba(254, 243, 199, 0.65) 100%) !important;
+  border: 1.5px solid #fecdd3 !important;
+  border-right: 5px solid #be123c !important;
+  box-shadow: 0 6px 18px -4px rgba(190, 18, 60, 0.10) !important;
+}
+#tab-lexicon .formal-mode-view > div:nth-child(2) {
+  background: linear-gradient(135deg, #ffffff 0%, #fffbfc 55%, #fff1f2 100%) !important;
+  border: 1.5px solid #fecdd3 !important;
+  border-right: 5px solid #be123c !important;
+  box-shadow: 0 8px 24px -6px rgba(190, 18, 60, 0.12) !important;
+}
+#tab-lexicon .formal-mode-view > div:nth-child(2) h2 { color: #4c0519 !important; }
+
+/* Sub-Chapter Quick Action Navigation Buttons in Header Card */
+.tab-content .formal-mode-view > div:nth-child(2) button:nth-child(1) {
+  background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%) !important;
+  border: 1.5px solid #fecdd3 !important;
+  color: #9f1239 !important;
+}
+.tab-content .formal-mode-view > div:nth-child(2) button:nth-child(1):hover {
+  background: linear-gradient(135deg, #9f1239, #be123c) !important;
+  color: #ffffff !important;
+}
+.tab-content .formal-mode-view > div:nth-child(2) button:nth-child(2) {
+  background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%) !important;
+  border: 1.5px solid #c7d2fe !important;
+  color: #312e81 !important;
+}
+.tab-content .formal-mode-view > div:nth-child(2) button:nth-child(2):hover {
+  background: linear-gradient(135deg, #312e81, #4338ca) !important;
+  color: #ffffff !important;
+}
+.tab-content .formal-mode-view > div:nth-child(2) button:nth-child(3) {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%) !important;
+  border: 1.5px solid #a7f3d0 !important;
+  color: #065f46 !important;
+}
+.tab-content .formal-mode-view > div:nth-child(2) button:nth-child(3):hover {
+  background: linear-gradient(135deg, #065f46, #059669) !important;
+  color: #ffffff !important;
+}
+
+/* Questions Modal (Elevated Crimson & Gold Theme) */
+#questions-modal .bg-white {
+  background: linear-gradient(180deg, #ffffff 0%, #fffbfc 100%) !important;
+  border: 1.5px solid #fecdd3 !important;
+  box-shadow: 0 25px 60px -15px rgba(190, 18, 60, 0.25) !important;
+}
+#questions-modal-header {
+  background: linear-gradient(to left, #fff1f2, #ffffff) !important;
+  border-bottom: 1.5px solid #fecdd3 !important;
+}
+#questions-modal-header h3 {
+  color: #881337 !important;
+}
+.q-option-btn {
+  background: #ffffff !important;
+  border: 1.5px solid #fed7aa !important;
+  color: #431407 !important;
+  box-shadow: 0 2px 8px rgba(190, 18, 60, 0.04) !important;
 }
 .q-option-btn:hover:not(:disabled) {
-  border-color: #a66d12;
-  background-color: #fdfbf4;
-  transform: translateX(-2px);
-  box-shadow: 0 2px 8px rgba(166, 109, 18, 0.14);
+  border-color: #e11d48 !important;
+  background: #fff1f2 !important;
+  color: #881337 !important;
 }
 .q-option-btn.correct {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%) !important;
   border-color: #059669 !important;
-  background: linear-gradient(to left, #d1fae5, #ecfdf5) !important;
-  color: #065f46 !important;
-  font-weight: 800;
-  box-shadow: 0 2px 10px rgba(5, 150, 105, 0.18);
+  color: #064e3b !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.18) !important;
 }
 .q-option-btn.incorrect {
+  background: #f1f5f9 !important;
   border-color: #cbd5e1 !important;
-  background-color: #f8fafc !important;
-  color: #64748b !important;
-  text-decoration: line-through;
-  opacity: 0.78;
-  cursor: not-allowed;
+  color: #94a3b8 !important;
+  text-decoration: line-through !important;
 }
 
 /* Strict BiDi Isolation for Inline Math, English & Parentheses */
-.bidi-ltr {
-  direction: ltr;
-  unicode-bidi: isolate;
-  display: inline-block;
+.math-inline, .katex, span.katex, .mjx-chtml, mjx-container {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  display: inline-block !important;
 }
 
 /* ==========================================================================
    SCROLLBAR-FREE KATEX & MATHJAX RENDERING (RTL + LTR)
    ========================================================================== */
-.katex-mathml, mjx-assistive-mml {
-  display: none !important;
-}
-mjx-container,
-.MathJax,
-.katex {
+.katex-display, .mjx-chtml[display="true"], mjx-container[display="true"] {
   direction: ltr !important;
   unicode-bidi: isolate !important;
-  display: inline !important;
-  overflow: visible !important;
-  line-height: 1.25;
-}
-.katex-html {
-  overflow: visible !important;
-}
-mjx-container[display="true"],
-.katex-display {
-  direction: ltr !important;
-  unicode-bidi: isolate !important;
-  display: block !important;
   text-align: center !important;
-  overflow: visible !important;
-  margin: 0.55rem 0 !important;
-  padding: 0.15rem 0 !important;
-  max-width: 100% !important;
+  margin: 1rem 0 !important;
+  padding: 0.5rem 0.25rem !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
 }
-.katex-display > .katex {
-  display: inline-block !important;
-  white-space: normal !important;
-  max-width: 100% !important;
-  overflow: visible !important;
-}
-mjx-container::-webkit-scrollbar,
-.katex::-webkit-scrollbar,
 .katex-display::-webkit-scrollbar,
-.katex-html::-webkit-scrollbar,
-.bidi-ltr::-webkit-scrollbar {
+.mjx-chtml[display="true"]::-webkit-scrollbar,
+mjx-container[display="true"]::-webkit-scrollbar {
   display: none !important;
   width: 0 !important;
   height: 0 !important;
@@ -605,229 +977,155 @@ mjx-container::-webkit-scrollbar,
 /* ==========================================================================
    3-MODE STUDY SWITCHER & VIEW VISIBILITY ENGINE (UNIT 6 STANDARD)
    ========================================================================== */
-.formal-mode-view { display: block; }
+.formal-mode-view,
 .eyelevel-mode-view,
 .theorems-mode-view {
   display: none !important;
 }
-body.study-mode-formal .formal-mode-view,
-body[data-study-mode="formal"] .formal-mode-view {
+body[data-study-mode="formal"] .formal-mode-view,
+body:not([data-study-mode]) .formal-mode-view {
   display: block !important;
-  animation: modeFadeIn 0.28s ease-out;
 }
-body.study-mode-eyelevel .formal-mode-view,
-body.study-mode-eyelevel .theorems-mode-view,
-body[data-study-mode="eyelevel"] .formal-mode-view,
-body[data-study-mode="eyelevel"] .theorems-mode-view {
-  display: none !important;
-}
-body.study-mode-eyelevel .eyelevel-mode-view,
 body[data-study-mode="eyelevel"] .eyelevel-mode-view {
   display: block !important;
-  animation: modeFadeIn 0.28s ease-out;
 }
-body.study-mode-theorems .formal-mode-view,
-body.study-mode-theorems .eyelevel-mode-view,
-body[data-study-mode="theorems"] .formal-mode-view,
-body[data-study-mode="theorems"] .eyelevel-mode-view {
-  display: none !important;
-}
-body.study-mode-theorems .theorems-mode-view,
 body[data-study-mode="theorems"] .theorems-mode-view {
   display: block !important;
-  animation: modeFadeIn 0.28s ease-out;
-}
-@keyframes modeFadeIn {
-  from { opacity: 0; transform: translateY(6px); }
-  to { opacity: 1; transform: translateY(0); }
 }
 
-.study-mode-btn, .mode-switch-btn {
-  color: #5c3b11;
-  background: transparent;
-  border: 1px solid transparent;
-  cursor: pointer;
+body.study-mode-eyelevel .formal-mode-view,
+body.study-mode-theorems .formal-mode-view {
+  display: none !important;
 }
-.study-mode-btn:hover:not(.active-mode-btn),
-.mode-switch-btn:hover:not(.active-mode-btn) {
-  color: #2e1a05;
-  background: rgba(255, 255, 255, 0.72);
+body.study-mode-eyelevel .eyelevel-mode-view {
+  display: block !important;
 }
-.study-mode-btn.active-mode-btn,
-.mode-switch-btn.active-mode-btn {
-  background: #ffffff !important;
-  color: #4d2e08 !important;
-  border-color: #e8c87c !important;
-  box-shadow: 0 2px 8px -1px rgba(166, 109, 18, 0.22) !important;
-}
-body[data-study-mode="eyelevel"] .study-mode-btn.active-mode-btn,
-body[data-study-mode="eyelevel"] .mode-switch-btn.active-mode-btn {
-  color: #0f766e !important;
-  border-color: #99f6e4 !important;
-  box-shadow: 0 2px 8px -1px rgba(13, 148, 136, 0.20) !important;
-}
-body[data-study-mode="theorems"] .study-mode-btn.active-mode-btn,
-body[data-study-mode="theorems"] .mode-switch-btn.active-mode-btn {
-  color: #9a3412 !important;
-  border-color: #fdba74 !important;
-  box-shadow: 0 2px 8px -1px rgba(194, 65, 12, 0.20) !important;
-}
-
-body.study-mode-eyelevel {
-  background-color: #f9f6ec !important;
-}
-body.study-mode-theorems {
-  background-color: #fbf7ef !important;
+body.study-mode-theorems .theorems-mode-view {
+  display: block !important;
 }
 
 /* ==========================================================================
-   EYE-LEVEL MODE ("בגובה העיניים") — SOFT BOOK STYLING (UNIT 6 GOLDEN)
+   EYE-LEVEL MODE ("בגובה העיניים") — WARM ROSE & GOLD BOOK STYLING
    ========================================================================== */
 .eye-chapter-banner {
-  background: linear-gradient(135deg, #fdfbf4 0%, #ffffff 52%, #f0fdfa 100%);
-  border: 1.5px solid #e8c87c;
-  border-radius: 1.5rem;
-  padding: 1.65rem 1.9rem;
-  box-shadow: 0 8px 24px -10px rgba(166, 109, 18, 0.12);
+  background: linear-gradient(135deg, rgba(255, 241, 242, 0.95) 0%, rgba(255, 255, 255, 0.98) 55%, rgba(254, 243, 199, 0.65) 100%) !important;
+  border: 1.5px solid #fecdd3 !important;
+  border-right: 5px solid #be123c !important;
+  border-radius: 1.35rem;
+  padding: 1.4rem 1.75rem;
+  box-shadow: 0 6px 20px -8px rgba(190, 18, 60, 0.12) !important;
 }
-.eye-mode-pill {
+.eye-chapter-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.28rem 0.85rem;
+  gap: 0.4rem;
+  padding: 0.22rem 0.75rem;
   border-radius: 9999px;
-  background: #fbf4df;
-  color: #69400b;
-  border: 1px solid #e8c87c;
-  font-size: 0.76rem;
+  background: linear-gradient(135deg, #9f1239, #be123c) !important;
+  color: #ffffff;
+  font-size: 0.75rem;
   font-weight: 800;
+  letter-spacing: 0.02em;
 }
-.eye-main-title {
+.eye-chapter-title {
   font-size: 1.55rem;
-  line-height: 1.35;
   font-weight: 900;
-  color: #2e1a05;
+  color: #4c0519 !important;
   margin-top: 0.45rem;
-  margin-bottom: 0.65rem;
-}
-.eye-lead-p {
-  font-size: 1.0rem;
-  line-height: 1.86;
-  color: #332411;
-}
-.eye-narrative-bridge {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  padding: 0.6rem 1.05rem;
-  border-radius: 0.9rem;
-  background: linear-gradient(to left, rgba(251, 244, 223, 0.88), rgba(253, 251, 244, 0.65));
-  border: 1px solid #e8c87c;
-  border-right: 4px solid #a66d12;
-  font-size: 0.86rem;
-  font-weight: 700;
-  color: #4d2e08;
-}
-.eye-bridge-dot {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 9999px;
-  background: #a66d12;
-  flex-shrink: 0;
+  line-height: 1.3;
 }
 .eye-story-card {
-  background: linear-gradient(145deg, #ffffff 0%, #fdfbf4 65%, #fbf4df 100%);
-  border: 1.5px solid #e8c87c;
-  border-right: 5px solid #a66d12;
+  background: #ffffff;
+  border: 1.5px solid #fecdd3 !important;
+  border-right: 5px solid #be123c !important;
   border-radius: 1.35rem;
   padding: 1.6rem 1.8rem;
-  box-shadow: 0 6px 20px -8px rgba(166, 109, 18, 0.09);
+  box-shadow: 0 6px 20px -8px rgba(190, 18, 60, 0.10) !important;
 }
 .eye-section-title {
   font-size: 1.22rem;
   font-weight: 900;
-  color: #2e1a05;
+  color: #4c0519 !important;
   margin-bottom: 0.8rem;
   padding-bottom: 0.55rem;
-  border-bottom: 1px solid #f4e2b2;
+  border-bottom: 1px solid #fecdd3 !important;
 }
 .eye-prose {
   font-size: 0.98rem;
-  line-height: 1.9;
+  line-height: 1.86;
   color: #291805;
 }
 .eye-concept-highlight {
-  background: linear-gradient(to left, #fbf4df, #ffffff);
-  border: 1.5px solid #e8c87c;
-  border-right: 4px solid #87550d;
+  background: linear-gradient(to left, #fef3c7, #ffffff) !important;
+  border: 1.5px solid #fde68a !important;
+  border-right: 4px solid #d97706 !important;
   border-radius: 1rem;
   padding: 1rem 1.25rem;
 }
 .eye-deep-notes {
-  background: linear-gradient(to left, #fdfbf4, #ffffff);
-  border: 1.5px solid #f4e2b2;
-  border-right: 4px solid #c28720;
+  background: linear-gradient(to left, #fff1f2, #ffffff) !important;
+  border: 1.5px solid #fecdd3 !important;
+  border-right: 4px solid #be123c !important;
   border-radius: 1rem;
   padding: 1rem 1.25rem;
 }
 .eye-graphic-box {
-  background: linear-gradient(135deg, #fdfbf4 0%, #ffffff 55%, #fbf4df 100%);
-  border: 1.5px solid #e8c87c;
+  background: linear-gradient(135deg, #fffbfa 0%, #ffffff 55%, #fef3c7 100%) !important;
+  border: 1.5px solid #fecdd3 !important;
   border-radius: 1.25rem;
   overflow: hidden;
-  box-shadow: 0 6px 20px -8px rgba(166, 109, 18, 0.10);
+  box-shadow: 0 6px 20px -8px rgba(190, 18, 60, 0.10) !important;
 }
 .eye-graphic-header {
-  background: linear-gradient(to left, #fbf4df, #fdfbf4, #ffffff);
+  background: linear-gradient(to left, #ffe4e6, #fffdf8, #ffffff) !important;
   padding: 0.62rem 1.05rem;
-  border-bottom: 1px solid #e8c87c;
+  border-bottom: 1px solid #fecdd3 !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.6rem;
 }
 .eye-graphic-badge {
   font-size: 0.72rem;
   font-weight: 800;
   padding: 0.2rem 0.65rem;
   border-radius: 9999px;
-  background: #a66d12;
+  background: linear-gradient(135deg, #9f1239, #be123c) !important;
   color: #ffffff;
 }
 .eye-graphic-title {
   font-size: 0.83rem;
   font-weight: 800;
-  color: #3d2305;
+  color: #4c0519 !important;
   flex: 1;
 }
 .eye-graphic-tag {
   font-size: 0.72rem;
   font-weight: 800;
-  color: #69400b;
+  color: #9f1239 !important;
   background: #ffffff;
   padding: 0.16rem 0.6rem;
   border-radius: 0.5rem;
-  border: 1px solid #d8a748;
+  border: 1px solid #fecdd3 !important;
 }
 .eye-svg-wrapper {
   padding: 0.75rem 0.9rem;
-  background: #ffffff;
-  overflow-x: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+  overflow-x: auto;
 }
 
 /* ==========================================================================
-   PURE THEOREMS MODE ("משפטים נטו") — SOFT GOLDEN BOUNDED BUBBLES
+   PURE THEOREMS MODE ("משפטים נטו") — RADIANT GOLDEN BOUNDED BUBBLES
    ========================================================================== */
 .theorems-header {
-  background: linear-gradient(135deg, #fbf4df 0%, #ffffff 55%, #fdfbf4 100%);
-  border: 1.5px solid #e8c87c;
-  border-right: 5px solid #a66d12;
+  background: linear-gradient(135deg, #fffbeb 0%, #ffffff 55%, #fef3c7 100%) !important;
+  border: 1.5px solid #fde68a !important;
+  border-right: 5px solid #d97706 !important;
   border-radius: 1.35rem;
   padding: 1.4rem 1.75rem;
-  box-shadow: 0 6px 20px -8px rgba(166, 109, 18, 0.10);
+  box-shadow: 0 6px 20px -8px rgba(217, 119, 6, 0.12) !important;
 }
 .theorems-connector {
   display: flex;
@@ -835,29 +1133,30 @@ body.study-mode-theorems {
   gap: 0.6rem;
   padding: 0.58rem 1.05rem;
   border-radius: 0.8rem;
-  background: linear-gradient(to left, #fbf4df, #fdfbf4);
-  border: 1px solid #f4e2b2;
-  border-right: 3.5px solid #b47814;
+  background: linear-gradient(to left, #fef3c7, #fffdf8) !important;
+  border: 1px solid #fde68a !important;
+  border-right: 3.5px solid #d97706 !important;
   font-size: 0.85rem;
   font-weight: 700;
-  color: #4d2e08;
+  color: #78350f !important;
 }
 .theorems-connector-dot {
   width: 0.55rem;
   height: 0.55rem;
   border-radius: 9999px;
-  background: #a66d12;
+  background: #d97706 !important;
   flex-shrink: 0;
-  box-shadow: 0 0 0 3px rgba(194, 135, 32, 0.22);
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.25) !important;
 }
 .theorems-item-card, .thm-neto-card {
   background: #ffffff;
-  border: 1.5px solid #e8c87c;
-  border-right: 5px solid #a66d12;
+  border: 1.5px solid #fde68a !important;
+  border-right: 5px solid #d97706 !important;
   border-radius: 1.25rem;
   padding: 1.3rem 1.55rem;
-  box-shadow: 0 6px 18px -6px rgba(166, 109, 18, 0.07);
+  box-shadow: 0 6px 18px -6px rgba(217, 119, 6, 0.08) !important;
 }
+
 .theorems-item-header {
   display: flex;
   align-items: center;
