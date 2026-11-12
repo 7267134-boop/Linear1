@@ -195,7 +195,7 @@
     </style>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e11d48'%3E%3Cpath d='M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1 2v6h6V5H5zm8 0v6h6V5h-6zm6 8h-6v6h6v-6zm-8 6v-6H5v6h6z'/%3E%3C/svg%3E">
 <script src="theme-manager.js"></script>
-<meta name="ai-document-summary" content="זירת התרגול והמשחק האינטראקטיבית של אלגברה לינארית 1 (20109): אליפות אלגברה לינארית, שאלות טריוויה וזיהוי משפטים מהיר תחת זמן, מעבדה גרפית, אתגרים וחידוד אינטואיציה לכל 12 פרקי הקורס.">
+<meta name="ai-document-summary" content="זירת התרגול והמשחק האינטראקטיבית של אלגברה לינארית 1 (20109): אליפות אלגברה לינארית, זירת אתגרים (Arena), שאלות טריוויה וזיהוי משפטים מהיר תחת זמן, מעבדה גרפית (Lab) עם סימולציות גיאומטריות, שאלות מבחנים רשמיות ומדדי שליטה (Mastery Dashboard) לכל 12 פרקי הקורס.">
 </head>
 <body class="antialiased selection:bg-indigo-500 selection:text-white">
 
@@ -1911,11 +1911,6 @@ function toggleSound() {
     if (btn) btn.textContent = gameState.soundEnabled ? '🔊' : '🔇';
     saveState();
     if (gameState.soundEnabled) playTone('click');
-}
-
-function toggleTheme() {
-    // Dark mode removed per design specification; always keep pure high-contrast light mode
-    document.body.classList.remove('dark-mode');
 }
 
 function openWelcomeModal() {
@@ -6229,7 +6224,7 @@ function renderExamQuestionCardHtml(q, examObj, isSingleFocus) {
         }
 
 Object.assign(window, {
-    toggleSound, toggleTheme, openWelcomeModal, closeWelcomeModal, toggleTopFocusMode, switchTab, openSimById, openUnitExplorer, openSimForCurrentUnit,
+    toggleSound, openWelcomeModal, closeWelcomeModal, toggleTopFocusMode, switchTab, openSimById, openUnitExplorer, openSimForCurrentUnit,
     handleGlobalSearch, clearGlobalSearch, openUnitAndSearch, toggleUnitsHeaderCollapse,
     selectUnitTab, resetAndRenderUnitItems, loadMoreUnitItems, toggleCardDrawer, checkInlineQuiz,
     awardXpAndMastery, toggleRetryQueue, populateArenaSubtopicOptions, onArenaUnitFilterChange,
