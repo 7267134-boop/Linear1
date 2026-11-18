@@ -23,7 +23,19 @@
     /* ==========================================================================
        1. הזרקת עיצובים חדים (CSS) מותאמים לפלטת Indigo / Blue של לינארית 1
        ========================================================================== */
-    function injectStyles() {
+        function isMainPage() {
+        try {
+            const path = (window.location.pathname || '').toLowerCase().replace(/\\/g, '/');
+            const segments = path.split('/').filter(Boolean);
+            if (segments.length === 0) return true;
+            const lastSegment = segments[segments.length - 1];
+            return lastSegment === '' || lastSegment === 'index.html' || lastSegment === 'index';
+        } catch (e) {
+            return true;
+        }
+    }
+
+function injectStyles() {
         if (document.getElementById('lin1-modals-styles')) return;
 
         const styleEl = document.createElement('style');
@@ -561,6 +573,8 @@
     }
 
     function createWelcomeModal() {
+        try { localStorage.setItem(STORAGE_KEYS.WELCOME_SHOWN, 'true'); } catch (e) {}
+
         injectStyles();
 
         // הסרת מודאל קיים אם פתוח
@@ -802,6 +816,8 @@
         document.body.appendChild(backdrop);
 
         const closeModal = () => {
+            try { localStorage.setItem(STORAGE_KEYS.WELCOME_SHOWN, 'true'); } catch (e) {}
+
             backdrop.style.opacity = '0';
             backdrop.style.transition = 'opacity 0.25s ease';
             setTimeout(() => backdrop.remove(), 250);
@@ -935,34 +951,55 @@
     };
 
     function checkAndTriggerModals() {
-        const now = Date.now();
+        try {
+            const isMain = isMainPage();
+            const welcomeShown = localStorage.getItem(STORAGE_KEYS.WELCOME_SHOWN) === 'true';
 
-        let firstSeen = localStorage.getItem(STORAGE_KEYS.FIRST_SEEN);
-        if (!firstSeen) {
-            localStorage.setItem(STORAGE_KEYS.FIRST_SEEN, now.toString());
-            firstSeen = now;
-        } else {
-            firstSeen = parseInt(firstSeen, 10);
-        }
-
-        const welcomeShown = localStorage.getItem(STORAGE_KEYS.WELCOME_SHOWN);
-        const lastSharePopup = parseInt(localStorage.getItem(STORAGE_KEYS.LAST_SHARE_POPUP) || '0', 10);
-        const timeSinceFirstSeen = now - firstSeen;
-
-        if (!welcomeShown) {
-            setTimeout(() => {
-                createWelcomeModal();
-            }, 800);
-            return;
-        }
-
-        if (timeSinceFirstSeen >= TWENTY_FOUR_HOURS_MS) {
-            const timeSinceLastShare = now - lastSharePopup;
-            if (lastSharePopup === 0 || timeSinceLastShare >= FIVE_DAYS_MS) {
-                setTimeout(() => {
-                    createShareModal();
-                }, 1200);
+            // מניעת הקפצה חוזרת בעמודים פנימיים (פרקים, מבחנים, סיכומים)
+            if (!isMain && welcomeShown) {
+                return;
             }
+
+            const now = Date.now();
+            let firstSeen = localStorage.getItem(STORAGE_KEYS.FIRST_SEEN);
+            if (!firstSeen) {
+                firstSeen = now.toString();
+                try {
+                    localStorage.setItem(STORAGE_KEYS.FIRST_SEEN, firstSeen);
+                } catch (e) {}
+            } else {
+                firstSeen = parseInt(firstSeen, 10);
+            }
+
+            // תרחיש 1: כניסה ראשונה אי-פעם לאתר (בכל עמוד שהוא)
+            if (!welcomeShown) {
+                try {
+                    localStorage.setItem(STORAGE_KEYS.WELCOME_SHOWN, 'true');
+                } catch (e) {}
+                setTimeout(() => {
+                    createWelcomeModal();
+                }, 800);
+                return;
+            }
+
+            // תרחיש 2: גולש חוזר (חלון שיתוף 5 ימים) - באופן בלעדי בעמוד הראשי בלבד!
+            if (!isMain) {
+                return;
+            }
+
+            const timeSinceFirstSeen = now - firstSeen;
+            const lastSharePopup = parseInt(localStorage.getItem(STORAGE_KEYS.LAST_SHARE_POPUP) || '0', 10);
+
+            if (timeSinceFirstSeen >= TWENTY_FOUR_HOURS_MS) {
+                const timeSinceLastShare = now - lastSharePopup;
+                if (lastSharePopup === 0 || timeSinceLastShare >= FIVE_DAYS_MS) {
+                    setTimeout(() => {
+                        createShareModal();
+                    }, 1200);
+                }
+            }
+        } catch (e) {
+            console.error('Error in checkAndTriggerModals:', e);
         }
     }
 
