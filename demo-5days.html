@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דגם הדגמה מהיר – חלונות קופצים (לינארית 1)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Rubik', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col">
+    <header class="bg-slate-800/90 backdrop-blur-md border-b border-indigo-500/30 px-6 py-4 sticky top-0 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <span class="text-2xl">🧪</span>
+                <div>
+                    <h1 class="text-base sm:text-lg font-black text-white">דף הדגמה מהיר • מודאלים מותאמים ללינארית 1</h1>
+                    <p class="text-xs text-indigo-300 font-medium">בדיקת חלון 5 ימים ומדריך כניסה ראשונה (פלטת Indigo & Blue)</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2.5 flex-wrap">
+                <button type="button" onclick="trigger5DaysModal()"
+                    class="px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-500 hover:to-blue-500 text-white font-black text-xs sm:text-sm shadow-md transition-all cursor-pointer flex items-center gap-1.5">
+                    <span>💙</span>
+                    <span>הצג חלון שיתוף (5 ימים)</span>
+                </button>
+                <button type="button" onclick="triggerWelcomeModal()"
+                    class="px-4 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 text-indigo-200 border border-indigo-400/40 font-black text-xs sm:text-sm shadow-md transition-all cursor-pointer flex items-center gap-1.5">
+                    <span>ℹ️</span>
+                    <span>פתח מדריך אתר (מעודכן)</span>
+                </button>
+                <a href="index.html"
+                    class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-600 text-xs font-bold transition-all flex items-center gap-1 no-underline">
+                    <span>🏠</span>
+                    <span>לאתר הראשי</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-4xl mx-auto p-6 flex flex-col justify-center items-center text-center">
+        <div class="p-8 rounded-3xl bg-slate-800/60 border border-slate-700 shadow-xl max-w-2xl">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-3xl font-black">
+                🧮
+            </div>
+            <h2 class="text-2xl font-black text-white mb-2">מערכת המודאלים מוכנה לפעולה בלינארית 1!</h2>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+                לחצו על הכפתורים בסרגל העליון כדי להציג את החלונות במדויק. בלחיצה על כפתור ההעתקה תועתק הודעת המלצה ייעודית ללינארית 1 עם פירוט 12 פרקי הליבה, 3 מצבי הלימוד ו-24 הבחינות הרשמיות.
+            </p>
+        </div>
+    </main>
+
+    <script src="course-modals.js?v=20261116"></script>
+    <script>
+        function trigger5DaysModal() {
+            if (window.showCourseShareModal) {
+                window.showCourseShareModal();
+            }
+        }
+        function triggerWelcomeModal() {
+            if (window.showCourseWelcomeModal) {
+                window.showCourseWelcomeModal();
+            }
+        }
+    </script>
+</body>
+</html>

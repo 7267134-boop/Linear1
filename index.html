@@ -227,6 +227,7 @@
         }
     </style>
     <script src="theme-manager.js"></script>
+    <script src="course-modals.js?v=20261116"></script>
 </head>
 
 <body class="relative flex flex-col justify-between min-h-screen text-slate-800">
@@ -1535,6 +1536,22 @@
     ========================================================================== -->
     <footer class="bg-transparent pb-6 relative z-30 mt-auto">
         <div class="flex flex-col items-center">
+
+            <!-- Quick Access Buttons for Welcome Roadmap & Share Modal -->
+            <div class="flex flex-wrap justify-center items-center gap-3 mb-4">
+                <button type="button" onclick="window.showCourseWelcomeModal()"
+                    title="פתיחת מדריך האתר ומטריצת הלימוד"
+                    class="px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-indigo-200/90 hover:border-indigo-500 hover:bg-indigo-50 text-indigo-800 hover:text-indigo-900 text-xs sm:text-sm font-bold transition-all duration-300 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex items-center gap-2 cursor-pointer">
+                    <span>ℹ️</span>
+                    <span>מדריך ומפת האתר</span>
+                </button>
+                <button type="button" onclick="window.showCourseShareModal()"
+                    title="פתיחת חלון שיתוף הקורס ומאגר הקורסים הראשי"
+                    class="px-4 py-2 rounded-full bg-white/80 backdrop-blur-md border border-blue-200/90 hover:border-blue-500 hover:bg-blue-50 text-blue-800 hover:text-blue-900 text-xs sm:text-sm font-bold transition-all duration-300 shadow-xs hover:shadow-md hover:-translate-y-0.5 flex items-center gap-2 cursor-pointer">
+                    <span>💙</span>
+                    <span>שיתוף האתר ומאגר הקורסים</span>
+                </button>
+            </div>
 
             <!-- Social & Contact Buttons (LinkedIn & WhatsApp ONLY) -->
             <div class="flex justify-center items-center gap-5 mb-3">
